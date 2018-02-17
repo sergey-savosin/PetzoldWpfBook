@@ -1,0 +1,6 @@
+C:\Users\Шелли\Documents\SharpDevelop Projects\PetzoldWpfBook\Petzold01\bin\Debug\Petzold01.exe.config
+C:\Users\Шелли\Documents\SharpDevelop Projects\PetzoldWpfBook\Petzold01\bin\Debug\Petzold01.exe
+C:\Users\Шелли\Documents\SharpDevelop Projects\PetzoldWpfBook\Petzold01\bin\Debug\Petzold01.pdb
+C:\Users\Шелли\Documents\SharpDevelop Projects\PetzoldWpfBook\Petzold01\obj\Debug\Petzold01.csprojResolveAssemblyReference.cache
+C:\Users\Шелли\Documents\SharpDevelop Projects\PetzoldWpfBook\Petzold01\obj\Debug\Petzold01.exe
+C:\Users\Шелли\Documents\SharpDevelop Projects\PetzoldWpfBook\Petzold01\obj\Debug\Petzold01.pdb

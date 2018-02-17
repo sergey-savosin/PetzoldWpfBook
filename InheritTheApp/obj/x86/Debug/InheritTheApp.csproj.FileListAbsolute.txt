@@ -1,0 +1,6 @@
+C:\Users\Шелли\Documents\SharpDevelop Projects\PetzoldWpfBook\InheritTheApp\obj\x86\Debug\InheritTheApp.csprojResolveAssemblyReference.cache
+C:\Users\Шелли\Documents\SharpDevelop Projects\PetzoldWpfBook\InheritTheApp\bin\Debug\InheritTheApp.exe.config
+C:\Users\Шелли\Documents\SharpDevelop Projects\PetzoldWpfBook\InheritTheApp\bin\Debug\InheritTheApp.exe
+C:\Users\Шелли\Documents\SharpDevelop Projects\PetzoldWpfBook\InheritTheApp\bin\Debug\InheritTheApp.pdb
+C:\Users\Шелли\Documents\SharpDevelop Projects\PetzoldWpfBook\InheritTheApp\obj\x86\Debug\InheritTheApp.exe
+C:\Users\Шелли\Documents\SharpDevelop Projects\PetzoldWpfBook\InheritTheApp\obj\x86\Debug\InheritTheApp.pdb

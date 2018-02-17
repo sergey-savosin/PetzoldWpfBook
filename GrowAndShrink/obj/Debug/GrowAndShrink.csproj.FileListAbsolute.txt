@@ -1,0 +1,6 @@
+C:\Users\Шелли\Documents\SharpDevelop Projects\PetzoldWpfBook\GrowAndShrink\bin\Debug\GrowAndShrink.exe.config
+C:\Users\Шелли\Documents\SharpDevelop Projects\PetzoldWpfBook\GrowAndShrink\bin\Debug\GrowAndShrink.exe
+C:\Users\Шелли\Documents\SharpDevelop Projects\PetzoldWpfBook\GrowAndShrink\bin\Debug\GrowAndShrink.pdb
+C:\Users\Шелли\Documents\SharpDevelop Projects\PetzoldWpfBook\GrowAndShrink\obj\Debug\GrowAndShrink.csprojResolveAssemblyReference.cache
+C:\Users\Шелли\Documents\SharpDevelop Projects\PetzoldWpfBook\GrowAndShrink\obj\Debug\GrowAndShrink.exe
+C:\Users\Шелли\Documents\SharpDevelop Projects\PetzoldWpfBook\GrowAndShrink\obj\Debug\GrowAndShrink.pdb
