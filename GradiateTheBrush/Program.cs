@@ -29,12 +29,34 @@ namespace Petzold.GradiateTheBrush
 		
 		public GradiateTheBrush()
 		{
-			Title = "Gradiate The Brush";
+			Title = "Gradiate The Brush. Press Space key.";
 			SizeChanged += WindowOnSizeChanged;
 			
 			brush = new LinearGradientBrush(Colors.Red, Colors.Blue, 0);
 			brush.MappingMode = BrushMappingMode.Absolute;
 			Background = brush;
+		}
+		
+		void MakeTheRainbow()
+		{
+			RadialGradientBrush brush2 = new RadialGradientBrush();
+			Background = brush2;
+			
+			brush2.GradientStops.Add(new GradientStop(Colors.Red, 0));
+			brush2.GradientStops.Add(new GradientStop(Colors.Orange, 0.17));
+			brush2.GradientStops.Add(new GradientStop(Colors.Yellow, 0.33));
+			brush2.GradientStops.Add(new GradientStop(Colors.Green, 0.5));
+			brush2.GradientStops.Add(new GradientStop(Colors.Blue, 0.67));
+			brush2.GradientStops.Add(new GradientStop(Colors.Indigo, 0.84));
+			brush2.GradientStops.Add(new GradientStop(Colors.Violet, 1));
+		}
+		
+		protected override void OnKeyDown(KeyEventArgs args)
+		{
+			if (args.Key == Key.Space)
+			{
+				MakeTheRainbow();
+			}
 		}
 		
 		void WindowOnSizeChanged(object sender, SizeChangedEventArgs args)
@@ -51,13 +73,9 @@ namespace Petzold.GradiateTheBrush
 			
 			vectPerp.Normalize();
 			vectPerp *= width * height / vectDiag.Length;
+			Background = brush;
 			brush.StartPoint = ptCenter + vectPerp;
 			brush.EndPoint = ptCenter - vectPerp;
-			Title = string.Format("start: {0}, end: {1}, width: {2}, height: {3}",
-			                      brush.StartPoint.ToString(),
-			                      brush.EndPoint.ToString(),
-			                     width,
-			                    height);
 		}
 		
 	}
