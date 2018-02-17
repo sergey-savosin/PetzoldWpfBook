@@ -4,9 +4,3 @@ C:\Users\Шелли\Documents\SharpDevelop Projects\PetzoldWpfBook\VaryTheBackgr
 C:\Users\Шелли\Documents\SharpDevelop Projects\PetzoldWpfBook\VaryTheBackground\obj\Debug\VaryTheBackground.csprojResolveAssemblyReference.cache
 C:\Users\Шелли\Documents\SharpDevelop Projects\PetzoldWpfBook\VaryTheBackground\obj\Debug\VaryTheBackground.exe
 C:\Users\Шелли\Documents\SharpDevelop Projects\PetzoldWpfBook\VaryTheBackground\obj\Debug\VaryTheBackground.pdb
-D:\GitRoot\PetzoldWpfBook\VaryTheBackground\bin\Debug\VaryTheBackground.exe.config
-D:\GitRoot\PetzoldWpfBook\VaryTheBackground\bin\Debug\VaryTheBackground.exe
-D:\GitRoot\PetzoldWpfBook\VaryTheBackground\bin\Debug\VaryTheBackground.pdb
-D:\GitRoot\PetzoldWpfBook\VaryTheBackground\obj\Debug\VaryTheBackground.csprojResolveAssemblyReference.cache
-D:\GitRoot\PetzoldWpfBook\VaryTheBackground\obj\Debug\VaryTheBackground.exe
-D:\GitRoot\PetzoldWpfBook\VaryTheBackground\obj\Debug\VaryTheBackground.pdb

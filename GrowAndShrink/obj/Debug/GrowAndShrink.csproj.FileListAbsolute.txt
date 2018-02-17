@@ -4,9 +4,3 @@ C:\Users\Шелли\Documents\SharpDevelop Projects\PetzoldWpfBook\GrowAndShrink
 C:\Users\Шелли\Documents\SharpDevelop Projects\PetzoldWpfBook\GrowAndShrink\obj\Debug\GrowAndShrink.csprojResolveAssemblyReference.cache
 C:\Users\Шелли\Documents\SharpDevelop Projects\PetzoldWpfBook\GrowAndShrink\obj\Debug\GrowAndShrink.exe
 C:\Users\Шелли\Documents\SharpDevelop Projects\PetzoldWpfBook\GrowAndShrink\obj\Debug\GrowAndShrink.pdb
-D:\GitRoot\PetzoldWpfBook\GrowAndShrink\bin\Debug\GrowAndShrink.exe.config
-D:\GitRoot\PetzoldWpfBook\GrowAndShrink\bin\Debug\GrowAndShrink.exe
-D:\GitRoot\PetzoldWpfBook\GrowAndShrink\bin\Debug\GrowAndShrink.pdb
-D:\GitRoot\PetzoldWpfBook\GrowAndShrink\obj\Debug\GrowAndShrink.csprojResolveAssemblyReference.cache
-D:\GitRoot\PetzoldWpfBook\GrowAndShrink\obj\Debug\GrowAndShrink.exe
-D:\GitRoot\PetzoldWpfBook\GrowAndShrink\obj\Debug\GrowAndShrink.pdb
