@@ -29,15 +29,15 @@ namespace Petzold.GradiateTheBrush
 		
 		public GradiateTheBrush()
 		{
-			Title = "Gradiate The Brush. Press Space key.";
-			SizeChanged += WindowOnSizeChanged;
+			Title = "Gradiate The Brush. Press Space or Enter key.";
+			//SizeChanged += WindowOnSizeChanged;
 			
 			brush = new LinearGradientBrush(Colors.Red, Colors.Blue, 0);
 			brush.MappingMode = BrushMappingMode.Absolute;
 			Background = brush;
 		}
 		
-		void MakeTheRainbow()
+		void MakeTheCircleRainbow()
 		{
 			RadialGradientBrush brush2 = new RadialGradientBrush();
 			Background = brush2;
@@ -51,11 +51,31 @@ namespace Petzold.GradiateTheBrush
 			brush2.GradientStops.Add(new GradientStop(Colors.Violet, 1));
 		}
 		
+		void MakeTheLinearRainbow()
+		{
+			LinearGradientBrush brush2 = new LinearGradientBrush();
+			brush2.StartPoint = new Point(0, 0);
+			brush2.EndPoint = new Point(1, 0);
+			Background = brush2;
+			
+			brush2.GradientStops.Add(new GradientStop(Colors.Red, 0));
+			brush2.GradientStops.Add(new GradientStop(Colors.Orange, 0.17));
+			brush2.GradientStops.Add(new GradientStop(Colors.Yellow, 0.33));
+			brush2.GradientStops.Add(new GradientStop(Colors.Green, 0.5));
+			brush2.GradientStops.Add(new GradientStop(Colors.Blue, 0.67));
+			brush2.GradientStops.Add(new GradientStop(Colors.Indigo, 0.84));
+			brush2.GradientStops.Add(new GradientStop(Colors.Violet, 1));
+		}
+
 		protected override void OnKeyDown(KeyEventArgs args)
 		{
 			if (args.Key == Key.Space)
 			{
-				MakeTheRainbow();
+				MakeTheLinearRainbow();
+			}
+			else if (args.Key == Key.Enter)
+			{
+				MakeTheCircleRainbow();
 			}
 		}
 		
