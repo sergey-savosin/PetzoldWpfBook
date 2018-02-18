@@ -2,4 +2,8 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/.vs/PetzoldWpfBook/v15/Server/sqlite3
+/.vs/PetzoldWpfBook/v15
+*.exe
+*.pdb
+/ClickTheGradientCenter/bin/Debug
+/ClickTheGradientCenter/obj/Debug
