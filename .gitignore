@@ -7,3 +7,4 @@
 *.pdb
 /ClickTheGradientCenter/bin/Debug
 /ClickTheGradientCenter/obj/Debug
+*.cache
