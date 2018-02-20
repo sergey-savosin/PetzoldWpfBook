@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Media;
 using System.Windows.Media.Imaging;
 
 namespace Petzold.ShowMyFace
@@ -21,6 +22,7 @@ namespace Petzold.ShowMyFace
             BitmapImage bitmap = new BitmapImage(uri);
             Image img = new Image();
             img.Source = bitmap;
+            img.LayoutTransform = new RotateTransform(45);
             Content = img;
         }
     }
