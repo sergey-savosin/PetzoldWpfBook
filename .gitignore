@@ -8,3 +8,5 @@
 /ClickTheGradientCenter/bin
 /ClickTheGradientCenter/obj
 *.cache
+/ClickTheButton/obj/Debug
+/FormatTheButton/obj/Debug
