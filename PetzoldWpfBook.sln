@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27130.2026
+VisualStudioVersion = 15.0.27130.2036
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InheritTheApp", "InheritTheApp\InheritTheApp.csproj", "{C3C6C406-3418-4880-B3B5-5DF5C0FCA0E6}"
 EndProject
@@ -51,6 +51,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "StackPanel", "StackPanel", "{BAD45D18-5B2D-4B75-8C0B-4E4B5FE779FA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StackTenButtons", "StackTenButtons\StackTenButtons.csproj", "{CB6D8C5B-56AA-4839-8D3E-BA478934B0D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stack30Buttons", "Stack30Buttons\Stack30Buttons.csproj", "{FAC4BFF7-9BFE-485A-BD90-BF673A6E089B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -278,6 +280,18 @@ Global
 		{CB6D8C5B-56AA-4839-8D3E-BA478934B0D3}.Release|x64.Build.0 = Release|Any CPU
 		{CB6D8C5B-56AA-4839-8D3E-BA478934B0D3}.Release|x86.ActiveCfg = Release|Any CPU
 		{CB6D8C5B-56AA-4839-8D3E-BA478934B0D3}.Release|x86.Build.0 = Release|Any CPU
+		{FAC4BFF7-9BFE-485A-BD90-BF673A6E089B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAC4BFF7-9BFE-485A-BD90-BF673A6E089B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAC4BFF7-9BFE-485A-BD90-BF673A6E089B}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{FAC4BFF7-9BFE-485A-BD90-BF673A6E089B}.Debug|x64.Build.0 = Debug|Any CPU
+		{FAC4BFF7-9BFE-485A-BD90-BF673A6E089B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{FAC4BFF7-9BFE-485A-BD90-BF673A6E089B}.Debug|x86.Build.0 = Debug|Any CPU
+		{FAC4BFF7-9BFE-485A-BD90-BF673A6E089B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAC4BFF7-9BFE-485A-BD90-BF673A6E089B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAC4BFF7-9BFE-485A-BD90-BF673A6E089B}.Release|x64.ActiveCfg = Release|Any CPU
+		{FAC4BFF7-9BFE-485A-BD90-BF673A6E089B}.Release|x64.Build.0 = Release|Any CPU
+		{FAC4BFF7-9BFE-485A-BD90-BF673A6E089B}.Release|x86.ActiveCfg = Release|Any CPU
+		{FAC4BFF7-9BFE-485A-BD90-BF673A6E089B}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -301,6 +315,7 @@ Global
 		{42A6AF10-E35E-4F68-A1D7-9A27F1D8B03A} = {AA5545B5-031F-4308-BD50-C5C3B8899730}
 		{821CDB16-56F9-4694-9D7D-50B6B5D129A7} = {AA5545B5-031F-4308-BD50-C5C3B8899730}
 		{CB6D8C5B-56AA-4839-8D3E-BA478934B0D3} = {BAD45D18-5B2D-4B75-8C0B-4E4B5FE779FA}
+		{FAC4BFF7-9BFE-485A-BD90-BF673A6E089B} = {BAD45D18-5B2D-4B75-8C0B-4E4B5FE779FA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F14C134D-C21B-4591-ACF6-F58A08FB46E5}
