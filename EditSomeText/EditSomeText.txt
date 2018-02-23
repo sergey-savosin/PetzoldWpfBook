@@ -1,0 +1,12 @@
+Begin text
+-------------------------
+<td class="PropertyUnits">
+					<div class="brd bg_grey_dark">
+						%
+					</div>
+				</td>
+-------------------------
+       INSERT INTO LicenseDB.[ac20].[ActivationCode20SyncQueueLicenseEventsIgnored] (Code, IgnoredTime, IgnoredBy, IgnoredComment) 
+       SELECT d.Code, GETUTCDATE(), SUSER_NAME() LoggedInUser, @IgnoredComment
+-------------------------
+text
