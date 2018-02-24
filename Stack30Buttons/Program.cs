@@ -23,6 +23,7 @@ namespace Petzold.Stack30Buttons
             ScrollViewer scroll = new ScrollViewer();
             scroll.VerticalScrollBarVisibility = ScrollBarVisibility.Auto;
 
+
             StackPanel stack = new StackPanel();
             stack.Orientation = Orientation.Horizontal;
             stack.Margin = new Thickness(5);
