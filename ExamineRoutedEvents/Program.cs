@@ -98,7 +98,7 @@ namespace Petzold.ExamineRoutedEvents
             scroll.Content = stackOutput;
 
             // add event handlers
-            UIElement[] els = { win, grid, scroll, text };
+            UIElement[] els = { win, grid, scroll, btn, text };
             foreach(UIElement el in els)
             {
                 // keyboard
