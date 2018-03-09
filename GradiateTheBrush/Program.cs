@@ -30,7 +30,7 @@ namespace Petzold.GradiateTheBrush
 		public GradiateTheBrush()
 		{
 			Title = "Gradiate The Brush. Press Space or Enter key.";
-			//SizeChanged += WindowOnSizeChanged;
+			// SizeChanged += WindowOnSizeChanged;
 			
 			brush = new LinearGradientBrush(Colors.Red, Colors.Blue, 0);
 			brush.MappingMode = BrushMappingMode.Absolute;
