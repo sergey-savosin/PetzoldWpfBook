@@ -4,9 +4,3 @@ C:\Users\Шелли\Documents\SharpDevelop Projects\PetzoldWpfBook\GradiateTheBr
 C:\Users\Шелли\Documents\SharpDevelop Projects\PetzoldWpfBook\GradiateTheBrush\bin\Debug\GradiateTheBrush.pdb
 C:\Users\Шелли\Documents\SharpDevelop Projects\PetzoldWpfBook\GradiateTheBrush\obj\Debug\GradiateTheBrush.exe
 C:\Users\Шелли\Documents\SharpDevelop Projects\PetzoldWpfBook\GradiateTheBrush\obj\Debug\GradiateTheBrush.pdb
-D:\GitRoot\PetzoldWpfBook\GradiateTheBrush\bin\Debug\GradiateTheBrush.exe.config
-D:\GitRoot\PetzoldWpfBook\GradiateTheBrush\bin\Debug\GradiateTheBrush.exe
-D:\GitRoot\PetzoldWpfBook\GradiateTheBrush\bin\Debug\GradiateTheBrush.pdb
-D:\GitRoot\PetzoldWpfBook\GradiateTheBrush\obj\Debug\GradiateTheBrush.csprojResolveAssemblyReference.cache
-D:\GitRoot\PetzoldWpfBook\GradiateTheBrush\obj\Debug\GradiateTheBrush.exe
-D:\GitRoot\PetzoldWpfBook\GradiateTheBrush\obj\Debug\GradiateTheBrush.pdb
