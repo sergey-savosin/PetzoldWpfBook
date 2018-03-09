@@ -1,8 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
+# Visual Studio 2012
+# SharpDevelop 5.1
 VisualStudioVersion = 15.0.27130.2026
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Brushes", "Brushes", "{95045CA8-4379-464F-9ED3-8E7CAC9BB27B}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InheritTheApp", "InheritTheApp\InheritTheApp.csproj", "{C3C6C406-3418-4880-B3B5-5DF5C0FCA0E6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrowAndShrink", "GrowAndShrink\GrowAndShrink.csproj", "{005DFCB8-F386-44E6-8E0D-0854D6E4644D}"
@@ -13,18 +16,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GradiateTheBrush", "Gradiat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClickTheGradientCenter", "ClickTheGradientCenter\ClickTheGradientCenter.csproj", "{D7DE2149-88E6-4BFD-9AB1-64284FB72C97}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Brushes", "Brushes", "{95045CA8-4379-464F-9ED3-8E7CAC9BB27B}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Content", "Content", "{329C09D9-794E-4E18-A61D-D73ED6AEE024}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisplaySomeText", "DisplaySomeText\DisplaySomeText.csproj", "{F5BE2109-4FEE-4721-8D2C-99546F2B5871}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShowMyFace", "ShowMyFace\ShowMyFace.csproj", "{DF747D36-199D-4013-9898-659460E6FECB}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9BE134F0-83EE-4250-B032-A202BC3B5370}"
-	ProjectSection(SolutionItems) = preProject
-		.gitignore = .gitignore
-	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShapeAnEllipse", "ShapeAnEllipse\ShapeAnEllipse.csproj", "{11276ACE-C29F-4224-BF12-BF4125CE6382}"
 EndProject
@@ -32,11 +28,20 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormatTheText", "FormatTheT
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RenderTheGraphic", "RenderTheGraphic\RenderTheGraphic.csproj", "{B5F73714-8756-4A97-AFB3-65DBCCBEFB91}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9BE134F0-83EE-4250-B032-A202BC3B5370}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Controls", "Controls", "{AA5545B5-031F-4308-BD50-C5C3B8899730}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClickTheButton", "ClickTheButton\ClickTheButton.csproj", "{0F18238C-4E7F-488C-8F31-9AD105B533A0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormatTheButton", "FormatTheButton\FormatTheButton.csproj", "{4AE34DB1-292D-4B4A-9360-8D143A02B3DC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RoutedEvents", "RoutedEvents", "{6AFE397B-40E1-4A0A-9FD6-3974A5AB45BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrawCircles", "DrawCircles\DrawCircles.csproj", "{08211875-4B84-460E-BE47-1B57FAF6585D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -192,9 +197,24 @@ Global
 		{4AE34DB1-292D-4B4A-9360-8D143A02B3DC}.Release|x64.Build.0 = Release|Any CPU
 		{4AE34DB1-292D-4B4A-9360-8D143A02B3DC}.Release|x86.ActiveCfg = Release|Any CPU
 		{4AE34DB1-292D-4B4A-9360-8D143A02B3DC}.Release|x86.Build.0 = Release|Any CPU
+		{08211875-4B84-460E-BE47-1B57FAF6585D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08211875-4B84-460E-BE47-1B57FAF6585D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08211875-4B84-460E-BE47-1B57FAF6585D}.Debug|x64.ActiveCfg = Debug|x64
+		{08211875-4B84-460E-BE47-1B57FAF6585D}.Debug|x64.Build.0 = Debug|x64
+		{08211875-4B84-460E-BE47-1B57FAF6585D}.Debug|x86.ActiveCfg = Debug|x86
+		{08211875-4B84-460E-BE47-1B57FAF6585D}.Debug|x86.Build.0 = Debug|x86
+		{08211875-4B84-460E-BE47-1B57FAF6585D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08211875-4B84-460E-BE47-1B57FAF6585D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08211875-4B84-460E-BE47-1B57FAF6585D}.Release|x64.ActiveCfg = Release|x64
+		{08211875-4B84-460E-BE47-1B57FAF6585D}.Release|x64.Build.0 = Release|x64
+		{08211875-4B84-460E-BE47-1B57FAF6585D}.Release|x86.ActiveCfg = Release|x86
+		{08211875-4B84-460E-BE47-1B57FAF6585D}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F14C134D-C21B-4591-ACF6-F58A08FB46E5}
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{C3C6C406-3418-4880-B3B5-5DF5C0FCA0E6} = {95045CA8-4379-464F-9ED3-8E7CAC9BB27B}
@@ -209,8 +229,6 @@ Global
 		{B5F73714-8756-4A97-AFB3-65DBCCBEFB91} = {329C09D9-794E-4E18-A61D-D73ED6AEE024}
 		{0F18238C-4E7F-488C-8F31-9AD105B533A0} = {AA5545B5-031F-4308-BD50-C5C3B8899730}
 		{4AE34DB1-292D-4B4A-9360-8D143A02B3DC} = {AA5545B5-031F-4308-BD50-C5C3B8899730}
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {F14C134D-C21B-4591-ACF6-F58A08FB46E5}
+		{08211875-4B84-460E-BE47-1B57FAF6585D} = {6AFE397B-40E1-4A0A-9FD6-3974A5AB45BF}
 	EndGlobalSection
 EndGlobal
