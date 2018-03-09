@@ -9,4 +9,3 @@ D:\GitRoot\PetzoldWpfBook\GrowAndShrink\bin\Debug\GrowAndShrink.exe
 D:\GitRoot\PetzoldWpfBook\GrowAndShrink\bin\Debug\GrowAndShrink.pdb
 D:\GitRoot\PetzoldWpfBook\GrowAndShrink\obj\Debug\GrowAndShrink.exe
 D:\GitRoot\PetzoldWpfBook\GrowAndShrink\obj\Debug\GrowAndShrink.pdb
-D:\GitRoot\PetzoldWpfBook\GrowAndShrink\obj\Debug\GrowAndShrink.csprojResolveAssemblyReference.cache
