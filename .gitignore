@@ -1,0 +1,12 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+*.exe
+*.pdb
+/ClickTheGradientCenter/bin
+/ClickTheGradientCenter/obj
+*.cache
+/ClickTheButton/obj/Debug
+/FormatTheButton/obj/Debug
