@@ -134,6 +134,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckTheColor", "CheckTheCo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SelectColorFromMenuGrid", "SelectColorFromMenuGrid\SelectColorFromMenuGrid.csproj", "{A74D3380-2292-43AF-9100-039FBFFF9183}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommandTheMenu", "CommandTheMenu\CommandTheMenu.csproj", "{72F6696B-20EC-4907-AC00-A1A25EC32AF1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -756,6 +758,18 @@ Global
 		{A74D3380-2292-43AF-9100-039FBFFF9183}.Release|x64.Build.0 = Release|Any CPU
 		{A74D3380-2292-43AF-9100-039FBFFF9183}.Release|x86.ActiveCfg = Release|Any CPU
 		{A74D3380-2292-43AF-9100-039FBFFF9183}.Release|x86.Build.0 = Release|Any CPU
+		{72F6696B-20EC-4907-AC00-A1A25EC32AF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72F6696B-20EC-4907-AC00-A1A25EC32AF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72F6696B-20EC-4907-AC00-A1A25EC32AF1}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{72F6696B-20EC-4907-AC00-A1A25EC32AF1}.Debug|x64.Build.0 = Debug|Any CPU
+		{72F6696B-20EC-4907-AC00-A1A25EC32AF1}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{72F6696B-20EC-4907-AC00-A1A25EC32AF1}.Debug|x86.Build.0 = Debug|Any CPU
+		{72F6696B-20EC-4907-AC00-A1A25EC32AF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72F6696B-20EC-4907-AC00-A1A25EC32AF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72F6696B-20EC-4907-AC00-A1A25EC32AF1}.Release|x64.ActiveCfg = Release|Any CPU
+		{72F6696B-20EC-4907-AC00-A1A25EC32AF1}.Release|x64.Build.0 = Release|Any CPU
+		{72F6696B-20EC-4907-AC00-A1A25EC32AF1}.Release|x86.ActiveCfg = Release|Any CPU
+		{72F6696B-20EC-4907-AC00-A1A25EC32AF1}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -812,6 +826,7 @@ Global
 		{E86B52A5-8928-425E-BF41-711AF04DFB72} = {12B78F66-DDA9-47A9-810A-2883208E33DA}
 		{0FC643E4-9AE5-4827-B676-70998EF7A903} = {12B78F66-DDA9-47A9-810A-2883208E33DA}
 		{A74D3380-2292-43AF-9100-039FBFFF9183} = {12B78F66-DDA9-47A9-810A-2883208E33DA}
+		{72F6696B-20EC-4907-AC00-A1A25EC32AF1} = {12B78F66-DDA9-47A9-810A-2883208E33DA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F14C134D-C21B-4591-ACF6-F58A08FB46E5}
