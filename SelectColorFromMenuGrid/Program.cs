@@ -1,4 +1,4 @@
-﻿using Petzold.SelectColorFromGrid;
+﻿using Petzold.SelectColorFromGrid2;
 using System;
 using System.Collections.Generic;
 using System.Linq;

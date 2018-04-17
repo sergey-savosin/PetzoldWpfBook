@@ -9,7 +9,7 @@ using System.Windows.Controls.Primitives;
 using System.Windows.Media;
 using System.Windows.Shapes;
 
-namespace Petzold.SelectColorFromGrid
+namespace Petzold.SelectColorFromGrid2
 {
     public class ColorGridBox : ListBox
     {
