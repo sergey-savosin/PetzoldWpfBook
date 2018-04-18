@@ -41,13 +41,18 @@ namespace Petzold.CraftTheToolbar
             };
 
             DockPanel dock = new DockPanel();
-            dock.LastChildFill = false;
+            //dock.LastChildFill = false;
             Content = dock;
 
             // up toolbar
             ToolBar toolbar = new ToolBar();
             dock.Children.Add(toolbar);
             DockPanel.SetDock(toolbar, Dock.Top);
+
+            // richTextBox
+            RichTextBox txtbox = new RichTextBox();
+            dock.Children.Add(txtbox);
+            txtbox.Focus();
 
             // Create toolbar buttons
             for (int i = 0; i < 8; i++)
@@ -69,11 +74,24 @@ namespace Petzold.CraftTheToolbar
                     Content = comm[i].Text
                 };
 
+                // stack panel
+                StackPanel stack = new StackPanel()
+                {
+                    Orientation = Orientation.Vertical
+                };
+                TextBlock text = new TextBlock()
+                {
+                    Text = comm[i].Text
+                };
+                stack.Children.Add(img);
+                stack.Children.Add(text);
+
                 // button
                 Button btn = new Button()
                 {
                     Command = comm[i],
-                    Content = img,
+                    //Content = img,
+                    Content = stack,
                     ToolTip = tip
                 };
                 toolbar.Items.Add(btn);
