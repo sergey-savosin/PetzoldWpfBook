@@ -52,6 +52,7 @@ namespace Petzold.ExploreDependencyProperties
             GridSplitter split = new GridSplitter()
             {
                 HorizontalAlignment = HorizontalAlignment.Center,
+                VerticalAlignment = VerticalAlignment.Stretch,
                 Width = 6,
                 ShowsPreview = true
             };
