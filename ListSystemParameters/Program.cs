@@ -41,17 +41,26 @@ namespace Petzold.ListSystemParameters
             };
             grdvue.Columns.Add(col);
 
+            // Create data template for 2-nd column
+            DataTemplate template = new DataTemplate(typeof(string));
+            FrameworkElementFactory factoryTextBlock = new FrameworkElementFactory(typeof(TextBlock));
+            factoryTextBlock.SetValue(TextBlock.HorizontalAlignmentProperty, HorizontalAlignment.Right);
+            factoryTextBlock.SetBinding(TextBlock.TextProperty, new Binding("Value"));
+            template.VisualTree = factoryTextBlock;
+
             col = new GridViewColumn()
             {
                 Header = "Value",
                 Width = 200,
-                DisplayMemberBinding = new Binding("Value")
+                CellTemplate = template
             };
             grdvue.Columns.Add(col);
 
             // get all system parameters
             PropertyInfo[] props = typeof(SystemParameters).GetProperties();
 
+            SortedList<string, SystemParam> sortlist = new SortedList<string, SystemParam>();
+            
             // Fill the ListView
             foreach (PropertyInfo prop in props)
             {
@@ -62,9 +71,11 @@ namespace Petzold.ListSystemParameters
                         Name = prop.Name,
                         Value = prop.GetValue(null, null)
                     };
-                    lstvue.Items.Add(sysparam);
+                    sortlist.Add(prop.Name, sysparam);
                 }
             }
+
+            lstvue.ItemsSource = sortlist.Values;
         }
     }
 }
