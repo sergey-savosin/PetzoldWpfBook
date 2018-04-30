@@ -21,6 +21,7 @@ namespace Petzold.ExamineKeystrokes
 	{
 		StackPanel stack;
 		ScrollViewer scroll;
+		
 		string strHeader = "Event     Key      Sys-Key   Text " +
 			"Ctrl-Text Sys-Text Ime KeyStates " +
 			"IsDown IsUp IsToggled IsRepeat ";
