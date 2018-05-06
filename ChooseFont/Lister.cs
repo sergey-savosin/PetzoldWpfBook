@@ -71,12 +71,156 @@ namespace Petzold.ChooseFont
 		
 		public void Add(object obj)
 		{
+			list.Add(obj);
+			TextBlock txtblk = new TextBlock()
+			{
+				Text = obj.ToString()
+			};
+			stack.Children.Add(txtblk);
+		}
+		
+		public void Insert(int index, object obj)
+		{
+			list.Insert(index, obj);
+			TextBlock txtblk = new TextBlock()
+			{
+				Text = obj.ToString()
+			};
+			stack.Children.Insert(index, txtblk);
+		}
+		
+		public void Clear()
+		{
+			SelectedIndex = -1;
+			stack.Children.Clear();
+			list.Clear();
+		}
+		
+		public bool Contains(object obj)
+		{
+			return list.Contains(obj);
+		}
+		
+		public int Count
+		{
+			get { return list.Count; }
+		}
+		
+		public void GoToLetter(char ch)
+		{
+			int offset = SelectedIndex + 1;
+			for (int i = 0; i < Count; i++)
+			{
+				int index = (i + offset) % Count;
+				if (Char.ToUpper(ch) == Char.ToUpper(list[index].ToString()[0]))
+				{
+					SelectedIndex = index;
+					break;
+				}
+			}
+		}
+		
+		// show selection line
+		public int SelectedIndex
+		{
+			set
+			{
+				if (value < -1 || value >= Count)
+					throw new ArgumentOutOfRangeException("SelectedIndex");
+				if (value == indexSelected)
+					return;
+				if (indexSelected != -1)
+				{
+					TextBlock txtblk = stack.Children[indexSelected] as TextBlock;
+					txtblk.Background = SystemColors.WindowBrush;
+					txtblk.Foreground = SystemColors.WindowTextBrush;
+				}
+				
+				indexSelected = value;
+				
+				if (indexSelected > -1)
+				{
+					TextBlock txtblk = stack.Children[indexSelected] as TextBlock;
+					txtblk.Background = SystemColors.HighlightBrush;
+					txtblk.Foreground = SystemColors.HighlightTextBrush;
+				}
+				
+				ScrollIntoView();
+				
+				// run event SelectionChanged
+				OnSelectionChanged(EventArgs.Empty);
+			}
 			
+			get
+			{
+				return indexSelected;
+			}
+		}
+		
+		public object SelectedItem
+		{
+			set
+			{
+				SelectedIndex = list.IndexOf(value);
+			}
+			get
+			{
+				if (SelectedIndex > -1)
+					return list[SelectedIndex];
+				return null;
+			}
+		}
+		
+		// page scroll methods
+		public void PageUp()
+		{
+			if (SelectedIndex == -1 || Count == 0)
+				return;
+			int index = SelectedIndex - (int)(Count * scroll.ViewportHeight / scroll.ExtentHeight);
+			if (index < 0)
+				index = 0;
+			SelectedIndex = index;
+		}
+		
+		public void PageDown()
+		{
+			if (SelectedIndex == -1 || Count == 0)
+				return;
+			int index = SelectedIndex + (int)(Count * scroll.ViewportHeight / scroll.ExtentHeight);
+			if (index > Count - 1)
+				index = Count - 1;
+			SelectedIndex = index;
 		}
 
+		// private method for scrolling view to current line
 		void ScrollIntoView()
 		{
-			throw new NotImplementedException();
+			if (Count == 0 || SelectedIndex == -1 || scroll.ViewportHeight > scroll.ExtentHeight)
+				return;
+			
+			double heightPerItem = scroll.ExtentHeight / Count;
+			double offsetItemTop = SelectedIndex * heightPerItem;
+			double offsetItemBot = (SelectedIndex + 1) * heightPerItem;
+			
+			if (offsetItemTop < scroll.VerticalOffset)
+				scroll.ScrollToVerticalOffset(offsetItemTop);
+			else if (offsetItemBot > scroll.VerticalOffset + scroll.ViewportHeight)
+				scroll.ScrollToVerticalOffset(offsetItemBot - scroll.ViewportHeight);
+		}
+		
+		// Event handler
+		void TextBlockOnMouseLeftButtonDown(object sender, MouseButtonEventArgs args)
+		{
+			if (args.Source is TextBlock)
+			{
+				SelectedIndex = stack.Children.IndexOf(args.Source as TextBlock);
+			}
+		}
+		
+		protected virtual void OnSelectionChanged(EventArgs args)
+		{
+			if (SelectionChanged != null)
+				SelectionChanged(this, args);
 		}
 	}
 }
