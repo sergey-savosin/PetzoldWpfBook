@@ -33,7 +33,39 @@ namespace Petzold.ChooseFont
 		public ChooseFont()
 		{
 			Title = "Choose font";
+			
+			Button btn = new Button()
+			{
+				Content = Title,
+				HorizontalAlignment = HorizontalAlignment.Center,
+				VerticalAlignment = VerticalAlignment.Center
+			};
+			btn.Click += ButtonOnClick;
+			Content = btn;
 		}
 		
+		void ButtonOnClick(object sender, RoutedEventArgs e)
+		{
+			FontDialog dlg = new FontDialog()
+			{
+				Owner = this,
+				Typeface = new Typeface(
+					FontFamily,
+					FontStyle,
+					FontWeight,
+					FontStretch),
+				FaceSize = FontSize
+			};
+			
+			if (dlg.ShowDialog().GetValueOrDefault())
+			{
+				// set Window properties
+				FontFamily = dlg.FontFamily;
+				FontStyle = dlg.FontStyle;
+				FontWeight = dlg.FontWeight;
+				FontStretch = dlg.FontStretch;
+				FontSize = dlg.FaceSize;
+			}
+		}
 	}
 }

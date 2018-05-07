@@ -59,11 +59,6 @@ namespace Petzold.ChooseFont
 			Loaded += OnLoaded;
 		}
 
-		void TextboxOnMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
-		{
-			throw new NotImplementedException();
-		}
-
 		void OnLoaded(object sender, RoutedEventArgs e)
 		{
 			ScrollIntoView();
@@ -209,7 +204,7 @@ namespace Petzold.ChooseFont
 		}
 		
 		// Event handler
-		void TextBlockOnMouseLeftButtonDown(object sender, MouseButtonEventArgs args)
+		void TextboxOnMouseLeftButtonDown(object sender, MouseButtonEventArgs args)
 		{
 			if (args.Source is TextBlock)
 			{
