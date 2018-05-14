@@ -104,8 +104,8 @@ namespace Petzold.NotepadClone
 			AddFileMenu(menu);
 			AddEditMenu(menu);
 			AddFormatMenu(menu);
-//			AddViewMenu(menu);
-//			AddHelpMenu(menu);
+			AddViewMenu(menu);
+			AddHelpMenu(menu);
 			
 			// load settings
 			settings = (NotepadCloneSettings)LoadSettings();

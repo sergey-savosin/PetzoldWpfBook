@@ -66,6 +66,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AboutDialog.cs" />
     <Compile Include="FindReplaceDialog\Direction.cs" />
     <Compile Include="FindReplaceDialog\FindDialog.cs" />
     <Compile Include="FindReplaceDialog\FindReplaceDialog.cs" />
@@ -76,7 +77,9 @@
     <Compile Include="NotepadClone.Edit.cs" />
     <Compile Include="NotepadClone.File.cs" />
     <Compile Include="NotepadClone.Find.cs" />
+    <Compile Include="NotepadClone.Help.cs" />
     <Compile Include="NotepadClone.Print.cs" />
+    <Compile Include="NotepadClone.View.cs" />
     <Compile Include="NotepadCloneSettings.cs" />
     <Compile Include="PageMarginsDialog\PageMarginsDialog.cs" />
     <Compile Include="PlainTextDocumentPaginator.cs" />
