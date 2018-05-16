@@ -1,0 +1,7 @@
+﻿<Button x:Class="Petzold.UseCustomXamlClass.CenteredButton"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	HorizontalAlignment="Center"
+	VerticalAlignment="Center"
+	Margin="12"
+	/>
