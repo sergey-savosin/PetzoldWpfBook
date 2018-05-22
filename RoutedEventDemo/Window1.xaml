@@ -1,0 +1,25 @@
+﻿
+<Window x:Class="Petzold.RoutedEventDemo.Window1"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	Title="RoutedEventDemo" Height="300" Width="300"
+	>
+	<TextBlock Name="txtblk"
+		FontSize="24pt"
+		HorizontalAlignment="Center"
+		VerticalAlignment="Center"
+		ToolTip="Right click to display context menu">
+		TextBlock with context menu
+		<TextBlock.ContextMenu>
+			<ContextMenu MenuItem.Click="MenuItemOnClick">
+				<MenuItem Header="Red" />
+				<MenuItem Header="Orange" />
+				<MenuItem Header="Yellow" />
+				<MenuItem Header="Green" />
+				<MenuItem Header="Blue" />
+				<MenuItem Header="Indigo" />
+				<MenuItem Header="Violet" />
+			</ContextMenu>
+		</TextBlock.ContextMenu>
+	</TextBlock>
+</Window>
