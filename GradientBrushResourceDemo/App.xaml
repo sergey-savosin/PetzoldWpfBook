@@ -1,0 +1,16 @@
+﻿<Application x:Class="Petzold.GradientBrushResourceDemo.App"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	StartupUri="Window1.xaml">
+	<Application.Resources>
+		 <LinearGradientBrush x:Key="brushGradient"
+			StartPoint="0, 0"
+			EndPoint="1, 1">
+			<LinearGradientBrush.GradientStops>
+		 		<GradientStop Offset="0" Color="Black" />
+		 		<GradientStop Offset="0.5" Color="Green" />
+		 		<GradientStop Offset="1" Color="Gold" />
+		 	</LinearGradientBrush.GradientStops>
+		</LinearGradientBrush>
+	</Application.Resources>
+</Application>

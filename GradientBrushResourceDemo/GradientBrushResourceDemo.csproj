@@ -1,16 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
   <PropertyGroup>
-    <ProjectGuid>{B6294F1B-0233-49C1-ADCE-298FE49A8A13}</ProjectGuid>
+    <ProjectGuid>{2586AE2E-35D2-48F3-9CE2-09EDA48A2243}</ProjectGuid>
     <ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <OutputType>Library</OutputType>
-    <RootNamespace>NotepadClone</RootNamespace>
-    <AssemblyName>NotepadClone</AssemblyName>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>GradientBrushResourceDemo</RootNamespace>
+    <AssemblyName>GradientBrushResourceDemo</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <NoWin32Manifest>False</NoWin32Manifest>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -41,9 +40,6 @@
     <Reference Include="PresentationFramework">
       <RequiredTargetFramework>3.0</RequiredTargetFramework>
     </Reference>
-    <Reference Include="ReachFramework">
-      <RequiredTargetFramework>3.0</RequiredTargetFramework>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
@@ -51,9 +47,6 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Data.DataSetExtensions">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
-    </Reference>
-    <Reference Include="System.Printing">
-      <RequiredTargetFramework>3.0</RequiredTargetFramework>
     </Reference>
     <Reference Include="System.Xaml">
       <RequiredTargetFramework>4.0</RequiredTargetFramework>
@@ -67,35 +60,25 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AboutDialog.cs" />
-    <Compile Include="FindReplaceDialog\Direction.cs" />
-    <Compile Include="FindReplaceDialog\FindDialog.cs" />
-    <Compile Include="FindReplaceDialog\FindReplaceDialog.cs" />
-    <Compile Include="FindReplaceDialog\ReplaceDialog.cs" />
-    <Compile Include="FontDialog\FontDialog.cs" />
-    <Compile Include="FontDialog\Lister.cs" />
-    <Compile Include="FontDialog\TextBoxWithLister.cs" />
-    <Compile Include="NotepadClone.Edit.cs" />
-    <Compile Include="NotepadClone.File.cs" />
-    <Compile Include="NotepadClone.Find.cs" />
-    <Compile Include="NotepadClone.Help.cs" />
-    <Compile Include="NotepadClone.Print.cs" />
-    <Compile Include="NotepadClone.View.cs" />
-    <Compile Include="NotepadCloneSettings.cs" />
-    <Compile Include="PageMarginsDialog\PageMarginsDialog.cs" />
-    <Compile Include="PlainTextDocumentPaginator.cs" />
-    <Compile Include="Program.cs" />
+    <ApplicationDefinition Include="App.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <SubType>Code</SubType>
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="WordWrapMenuItem.cs" />
+    <Compile Include="Properties\WPFAssemblyInfo.cs" />
+    <Compile Include="Window1.xaml.cs">
+      <SubType>Code</SubType>
+      <DependentUpon>Window1.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Window1.xaml" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
-    <Compile Include="NotepadClone.Format.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="FontDialog" />
-    <Folder Include="FindReplaceDialog" />
-    <Folder Include="PageMarginsDialog" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
