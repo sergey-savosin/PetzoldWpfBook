@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window
+	x:Class="Petzold.YellowPad.YellowPadWindow"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+	xmlns:src="clr-namespace:Petzold.YellowPad"
+	Title="Yellow Pad"
+	SizeToContent="WidthAndHeight">
+	<DockPanel>
+		<Menu DockPanel.Dock="Top">
+			<MenuItem
+				Header="_File">
+				<MenuItem
+					Header="_New"
+					Command="New" />
+				<MenuItem
+					Header="_Open..."
+					Command="Open" />
+				<MenuItem
+					Header="_Save..."
+					Command="Save" />
+				<Separator />
+				<MenuItem
+					Header="E_xit"
+					Command="Close" />
+			</MenuItem>
+			<MenuItem Header="_Edit" SubmenuOpened="EditOnOpened">
+				<MenuItem
+					Header="Cu_t"
+					Command="Cut" />
+				<MenuItem
+					Header="_Copy"
+					Command="Copy" />
+				<MenuItem
+					Header="_Paste"
+					Command="Paste" />
+				<MenuItem
+					Header="_Delete"
+					Command="Delete" />
+				<Separator />
+				<MenuItem
+					Header="Select _All"
+					Command="SelectAll" />
+				<MenuItem
+					Header="_Format selection..."
+					Name="itemFormat"
+					Click="FormatOnClick" />
+			</MenuItem>
+			<MenuItem
+				Header="_Stylus-Mode"
+				SubmenuOpened="StylusModeOnOpened">
+				<MenuItem
+					Header="_Ink"
+					Click="StylusModeOnClick"
+					Tag="{x:Static InkCanvasEditingMode.Ink}" />
+				<MenuItem
+					Header="Erase by _point"
+					Click="StylusModeOnClick"
+					Tag="{x:Static InkCanvasEditingMode.EraseByPoint}" />
+				<MenuItem
+					Header="_Erase by stroke"
+					Click="StylusModeOnClick"
+					Tag="{x:Static InkCanvasEditingMode.EraseByStroke}" />
+				<MenuItem
+					Header="_Select"
+					Click="StylusModeOnClick"
+					Tag="{x:Static InkCanvasEditingMode.Select}" />
+			</MenuItem>
+			<!-- Only for pad computers -->
+			<MenuItem
+				Header="E_raser-Mode"
+				SubmenuOpened="EraserModeOnOpened"
+				Name="menuEraserMode">
+				<MenuItem
+					Header="_Ink"
+					Click="EraserModeOnClick"
+					Tag="{x:Static InkCanvasEditingMode.Ink}" />
+				<MenuItem
+					Header="Erase by _Point"
+					Click="EraserModeOnClick"
+					Tag="{x:Static InkCanvasEditingMode.EraseByPoint}" />
+				<MenuItem
+					Header="_Erase by stroke"
+					Click="EraserModeOnClick"
+					Tag="{x:Static InkCanvasEditingMode.EraseByStroke}" />
+				<MenuItem
+					Header="_Select"
+					Click="EraserModeOnClick"
+					Tag="{x:Static InkCanvasEditingMode.Select}" />
+			</MenuItem>
+			<MenuItem Header="_Tools">
+				<MenuItem
+					Header="_Stylus..."
+					Click="StylusToolOnClick" />
+				<MenuItem
+					Header="_Eraser..."
+					Click="EraserToolOnClick" />
+			</MenuItem>
+			<MenuItem Header="_Help">
+				<MenuItem
+					Header="_Help..."
+					Command="Help" />
+				<MenuItem
+					Header="_About YellowPad..."
+					Click="AboutOnClick" />
+			</MenuItem>
+		</Menu>
+		<!-- ScrollViewer with InkCanvas -->
+		<ScrollViewer
+			VerticalScrollBarVisibility="Auto">
+			<InkCanvas
+				Name="inkcanv"
+				Width="{x:Static src:YellowPadWindow.widthCanvas}"
+				Height="{x:Static src:YellowPadWindow.heightCanvas}"
+				Background="LemonChiffon">
+				<Line
+					Stroke="Red"
+					X1="0.875in"
+					Y1="0"
+					X2="0.875in"
+					Y2="{x:Static src:YellowPadWindow.heightCanvas}" />
+				<Line
+					Stroke="Red"
+					X1="0.9375in"
+					Y1="0"
+					X2="0.9375in"
+					Y2="{x:Static src:YellowPadWindow.heightCanvas}" />
+			</InkCanvas>
+		</ScrollViewer>
+	</DockPanel>
+
+	<Window.CommandBindings>
+		<CommandBinding Command="New" Executed="NewOnExecuted" />
+		<CommandBinding Command="Open" Executed="OpenOnExecuted" />
+		<CommandBinding Command="Save" Executed="SaveOnExecuted" />
+		<CommandBinding Command="Close" Executed="CloseOnExecuted" />
+		<CommandBinding Command="Cut" CanExecute="CutCanExecute" 
+		                Executed="CutOnExecuted" />
+		<CommandBinding Command="Copy" CanExecute="CutCanExecute" 
+		                Executed="CopyOnExecuted" />
+		<CommandBinding Command="Paste" CanExecute="PasteCanExecute" 
+		                Executed="PasteOnExecuted" />
+		<CommandBinding Command="Delete" CanExecute="CutCanExecute" 
+		                Executed="DeleteOnExecuted" />
+		<CommandBinding Command="SelectAll" Executed="SelectAllOnExecuted" />
+		<CommandBinding Command="Help" Executed="HelpOnExecuted" />
+	</Window.CommandBindings>
+</Window>
