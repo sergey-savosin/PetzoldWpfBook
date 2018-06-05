@@ -50,26 +50,11 @@ namespace Petzold.YellowPad
 					menuEraserMode.Visibility = Visibility.Collapsed;
 			}
 		}
-		void StylusModeOnOpened(object sender, RoutedEventArgs e)
-		{
-			throw new NotImplementedException();
-		}
 		void EditOnOpened(object sender, RoutedEventArgs e)
 		{
 			throw new NotImplementedException();
 		}
-		void StylusModeOnClick(object sender, RoutedEventArgs e)
-		{
-			throw new NotImplementedException();
-		}
-		void EraserModeOnOpened(object sender, RoutedEventArgs e)
-		{
-			throw new NotImplementedException();
-		}
-		void EraserModeOnClick(object sender, RoutedEventArgs e)
-		{
-			throw new NotImplementedException();
-		}
+		
 		void StylusToolOnClick(object sender, RoutedEventArgs e)
 		{
 			throw new NotImplementedException();

@@ -1,0 +1,71 @@
+
+<Window x:Class="Petzold.YellowPad.StylusToolDialog"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:color="clr-namespace:Petzold.ListColorElegantly"
+	Title="Stylus Tool" ShowInTaskbar="False" WindowStartupLocation="CenterOwner"
+	SizeToContent="WidthAndHeight" ResizeMode="NoResize">
+	<Grid Margin="6">
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition />
+			<ColumnDefinition />
+		</Grid.ColumnDefinitions>
+		<Grid.RowDefinitions>
+			<RowDefinition />
+			<RowDefinition />
+			<RowDefinition />
+			<RowDefinition />
+			<RowDefinition />
+		</Grid.RowDefinitions>
+		<!-- Grid 3x4 for 3 TextBox -->
+		<Grid Grid.Row="0" Grid.Column="0">
+			<Grid.RowDefinitions>
+				<RowDefinition />
+				<RowDefinition />
+				<RowDefinition />
+			</Grid.RowDefinitions>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition />
+				<ColumnDefinition />
+				<ColumnDefinition />
+				<ColumnDefinition />
+			</Grid.ColumnDefinitions>
+			<Label Content="_Width:" Grid.Row="0" Grid.Column="0" Margin="6 6 0 6" />
+			<TextBox Name="txtboxWidth" Grid.Row="0" Grid.Column="1" Width="50" TextAlignment="Right" Margin="0 6 0 6" />
+			<Label Content="points" Grid.Row="0" Grid.Column="2" Margin="0 6 6 6" />
+		
+			<Label Content="_Height:" Grid.Row="1" Grid.Column="0" Margin="6 6 0 6" />
+			<TextBox Name="txtboxHeight" Grid.Row="1" Grid.Column="1" Width="50" TextAlignment="Right" Margin="0 6 0 6" />
+			<Label Content="points" Grid.Row="1" Grid.Column="2" Margin="0 6 6 6" />
+
+			<Label Content="_Rotation:" Grid.Row="2" Grid.Column="0" Margin="6 6 0 6" />
+			<TextBox Name="txtboxAngle" Grid.Row="2" Grid.Column="1" Width="50" TextAlignment="Right" Margin="0 6 0 6" />
+			<Label Content="degrees" Grid.Row="2" Grid.Column="2" Margin="0 6 6 6" />
+		</Grid>
+
+		<!-- GroupBox with 2 RadioButtons for stylus point -->
+		<GroupBox Header="_Stylus tip" Grid.Row="1" Grid.Column="0" Margin="6">
+			<StackPanel>
+				<RadioButton Name="radioEllipse" Content="Ellipse" Margin="6" />
+				<RadioButton Name="radioRect" Content="Rectangle" Margin="6" />
+			</StackPanel>
+		</GroupBox>
+	
+		<!-- 2 CheckBoxes -->
+		<CheckBox Name="chkboxPressure" Content="_Ignore pressure" Grid.Row="2" Grid.Column="0" Margin="12 6 6 6" />
+		<CheckBox Name="chkboxHighlighter" Content="_Highlighter" Grid.Row="3" Grid.Column="0" Margin="12 6 6 6" />
+	
+		<!-- ColorListBox -->
+		<color:ColorListBox x:Name="lstboxColor" Width="150" Height="200" Grid.Row="0" Grid.Column="1"
+			Grid.RowSpan="3" Margin="6" />
+	
+		<!-- Ok, Cancel buttons -->
+		<UniformGrid Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" Columns="2">
+			<Button Content="OK" Name="btnOk" Click="OkOnClick" IsDefault="True" MinWidth="60" Margin="6"
+				HorizontalAlignment="Center" />
+			<Button Content="Cancel" IsCancel="True" MinWidth="60" Margin="6"
+				HorizontalAlignment="Center" />
+		</UniformGrid>
+	
+	</Grid>
+</Window>
