@@ -66,7 +66,7 @@ namespace Petzold.YellowPad
 				Owner = this,
 				Title = "Format selection"
 			};
-			
+
 			// stroke for the first selected stroke
 			StrokeCollection strokes = inkcanv.GetSelectedStrokes();
 			
