@@ -55,14 +55,6 @@ namespace Petzold.YellowPad
 			throw new NotImplementedException();
 		}
 		
-		void StylusToolOnClick(object sender, RoutedEventArgs e)
-		{
-			throw new NotImplementedException();
-		}
-		void EraserToolOnClick(object sender, RoutedEventArgs e)
-		{
-			throw new NotImplementedException();
-		}
 		void AboutOnClick(object sender, RoutedEventArgs e)
 		{
 			throw new NotImplementedException();

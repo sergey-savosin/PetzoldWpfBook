@@ -1,5 +1,5 @@
 ﻿
-<Window x:Class="Petzold.RoutedEventDemo.Window1"
+<Window x:Class="Petzold.RoutedEventDemo.RoutedEventDemo"
 	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 	Title="RoutedEventDemo" Height="300" Width="300"
