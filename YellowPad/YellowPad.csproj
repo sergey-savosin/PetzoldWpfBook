@@ -76,6 +76,7 @@
       <DependentUpon>StylusToolDialog.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="YellowPadWindow.Edit.cs" />
     <Compile Include="YellowPadWindow.File.cs" />
     <Compile Include="YellowPadWindow.Mode.cs" />
     <Compile Include="YellowPadWindow.Tool.cs" />

@@ -37,7 +37,7 @@ namespace Petzold.XamlCruncher
 		bool isSuspendParsing = false;
 		
 		[STAThread]
-		public new static void Main()
+		public static void Main()
 		{
 			Application app = new Application();
 			app.ShutdownMode = ShutdownMode.OnMainWindowClose;

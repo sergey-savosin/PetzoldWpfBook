@@ -50,44 +50,8 @@ namespace Petzold.YellowPad
 					menuEraserMode.Visibility = Visibility.Collapsed;
 			}
 		}
-		void EditOnOpened(object sender, RoutedEventArgs e)
-		{
-			throw new NotImplementedException();
-		}
 		
 		void AboutOnClick(object sender, RoutedEventArgs e)
-		{
-			throw new NotImplementedException();
-		}
-		void FormatOnClick(object sender, RoutedEventArgs e)
-		{
-			throw new NotImplementedException();
-		}
-		void CutCanExecute(object sender, CanExecuteRoutedEventArgs e)
-		{
-			throw new NotImplementedException();
-		}
-		void CutOnExecuted(object sender, ExecutedRoutedEventArgs e)
-		{
-			throw new NotImplementedException();
-		}
-		void CopyOnExecuted(object sender, ExecutedRoutedEventArgs e)
-		{
-			throw new NotImplementedException();
-		}
-		void PasteCanExecute(object sender, CanExecuteRoutedEventArgs e)
-		{
-			throw new NotImplementedException();
-		}
-		void PasteOnExecuted(object sender, ExecutedRoutedEventArgs e)
-		{
-			throw new NotImplementedException();
-		}
-		void DeleteOnExecuted(object sender, ExecutedRoutedEventArgs e)
-		{
-			throw new NotImplementedException();
-		}
-		void SelectAllOnExecuted(object sender, ExecutedRoutedEventArgs e)
 		{
 			throw new NotImplementedException();
 		}
