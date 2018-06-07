@@ -69,7 +69,7 @@ namespace Petzold.YellowPad
 
 			// stroke for the first selected stroke
 			StrokeCollection strokes = inkcanv.GetSelectedStrokes();
-			
+
 			if (strokes.Count > 0)
 				dlg.DrawingAttributes = strokes[0].DrawingAttributes;
 			else
