@@ -51,13 +51,5 @@ namespace Petzold.YellowPad
 			}
 		}
 		
-		void AboutOnClick(object sender, RoutedEventArgs e)
-		{
-			throw new NotImplementedException();
-		}
-		void HelpOnExecuted(object sender, ExecutedRoutedEventArgs e)
-		{
-			throw new NotImplementedException();
-		}
 	}
 }

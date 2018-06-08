@@ -1,0 +1,36 @@
+
+<Window x:Class="Petzold.YellowPad.YellowPadAboutDialog"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	Title="About YellowPad"
+	ShowInTaskbar="False"
+	WindowStartupLocation="CenterOwner"
+	SizeToContent="WidthAndHeight"
+	ResizeMode="NoResize">
+	<StackPanel>
+		<!-- Program name -->
+		<TextBlock HorizontalAlignment="Center" Margin="12" FontSize="48">
+			<Italic>Yellow Pad</Italic>
+		</TextBlock>
+	
+		<!-- Book cover -->
+		<Image Source="Images\BookCover.jpg" Stretch="None" Margin="12" />
+	
+		<!-- Image with signature -->
+		<Image Name="imgSignature" Stretch="None" Margin="12" />
+	
+		<!-- Link to the site -->
+		<TextBlock HorizontalAlignment="Center" FontSize="20">
+			<Hyperlink NavigateUri="http://www.charlespetzold.com"
+			           RequestNavigate="LinkOnRequestNavigate">
+				www.charlespetzold.com
+			</Hyperlink>
+		</TextBlock>
+	
+		<!-- Ok button -->
+		<Button HorizontalAlignment="Center" MinWidth="60" Margin="12"
+				IsDefault="True" IsCancel="True">
+			OK
+		</Button>
+	</StackPanel>
+</Window>

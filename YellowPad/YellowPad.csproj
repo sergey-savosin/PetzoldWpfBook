@@ -76,8 +76,13 @@
       <DependentUpon>StylusToolDialog.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="YellowPadAboutDialog.xaml.cs">
+      <DependentUpon>YellowPadAboutDialog.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="YellowPadWindow.Edit.cs" />
     <Compile Include="YellowPadWindow.File.cs" />
+    <Compile Include="YellowPadWindow.Help.cs" />
     <Compile Include="YellowPadWindow.Mode.cs" />
     <Compile Include="YellowPadWindow.Tool.cs" />
     <Compile Include="YellowPadWindow.xaml.cs">
@@ -86,14 +91,18 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Images\Signature.xaml" />
     <Page Include="StylusToolDialog.xaml" />
+    <Page Include="YellowPadAboutDialog.xaml" />
     <Page Include="YellowPadWindow.xaml" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <Resource Include="Images\BookCover.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ColorListBox" />
+    <Folder Include="Images" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
