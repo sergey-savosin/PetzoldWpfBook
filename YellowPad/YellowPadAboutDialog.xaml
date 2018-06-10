@@ -1,5 +1,5 @@
 
-<Window x:Class="Petzold.YellowPad.YellowPadAboutDialog"
+<NavigationWindow x:Class="Petzold.YellowPad.YellowPadAboutDialog"
 	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 	Title="About YellowPad"
@@ -7,6 +7,7 @@
 	WindowStartupLocation="CenterOwner"
 	SizeToContent="WidthAndHeight"
 	ResizeMode="NoResize">
+	<NavigationWindow.Content>
 	<StackPanel>
 		<!-- Program name -->
 		<TextBlock HorizontalAlignment="Center" Margin="12" FontSize="48">
@@ -22,7 +23,7 @@
 		<!-- Link to the site -->
 		<TextBlock HorizontalAlignment="Center" FontSize="20">
 			<Hyperlink NavigateUri="http://www.charlespetzold.com"
-			           RequestNavigate="LinkOnRequestNavigate">
+			           >
 				www.charlespetzold.com
 			</Hyperlink>
 		</TextBlock>
@@ -33,4 +34,5 @@
 			OK
 		</Button>
 	</StackPanel>
-</Window>
+	</NavigationWindow.Content>
+</NavigationWindow>
