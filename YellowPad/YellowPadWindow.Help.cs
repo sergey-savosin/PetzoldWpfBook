@@ -25,11 +25,11 @@ namespace Petzold.YellowPad
 		
 		void HelpOnExecuted(object sender, ExecutedRoutedEventArgs e)
 		{
-//			YellowPadHelp win = new YellowPadHelp()
-//			{
-//				Owner = this
-//			};
-//			win.Show();
+			YellowPadHelp win = new YellowPadHelp()
+			{
+				Owner = this
+			};
+			win.Show();
 		}
 	}
 }

@@ -80,6 +80,10 @@
       <DependentUpon>YellowPadAboutDialog.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="YellowPadHelp.xaml.cs">
+      <DependentUpon>YellowPadHelp.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="YellowPadWindow.Edit.cs" />
     <Compile Include="YellowPadWindow.File.cs" />
     <Compile Include="YellowPadWindow.Help.cs" />
@@ -92,12 +96,26 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\Signature.xaml" />
+    <Page Include="Help\Copyright.xaml" />
+    <Page Include="Help\EditMenu.xaml" />
+    <Page Include="Help\EraserModeMenu.xaml" />
+    <Page Include="Help\EraserToolDialog.xaml" />
+    <Page Include="Help\FileMenu.xaml" />
+    <Page Include="Help\HelpMenu.xaml" />
+    <Page Include="Help\Overview.xaml" />
+    <Page Include="Help\StylusModeMenu.xaml" />
+    <Page Include="Help\StylusToolDialog.xaml" />
+    <Page Include="Help\ToolsMenu.xaml" />
     <Page Include="StylusToolDialog.xaml" />
     <Page Include="YellowPadAboutDialog.xaml" />
+    <Page Include="YellowPadHelp.xaml" />
     <Page Include="YellowPadWindow.xaml" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <Resource Include="Help\EraserToolDialog.png" />
+    <Resource Include="Help\FormatSelectionDialog.png" />
+    <Resource Include="Help\StylusToolDialog.png" />
     <Resource Include="Images\BookCover.jpg" />
   </ItemGroup>
   <ItemGroup>

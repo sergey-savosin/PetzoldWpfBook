@@ -1,0 +1,34 @@
+﻿<NavigationWindow x:Class="Petzold.YellowPad.YellowPadHelp"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	Title="YellowPad Help" Height="600" Width="800"
+	ShowInTaskbar="False" WindowStartupLocation="CenterScreen">
+	<NavigationWindow.Content>
+	<Grid>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="25*" />
+			<ColumnDefinition Width="Auto" />
+			<ColumnDefinition Width="75*" />
+		</Grid.ColumnDefinitions>
+		<TreeView Name="tree" FontSize="10pt" SelectedItemChanged="HelpOnSelectedItemChanged">
+			<TreeViewItem Header="Program overview" Tag="Help/Overview.xaml" />
+			<TreeViewItem Header="Exploring the menus">
+				<TreeViewItem Header="The file menu" Tag="Help/FileMenu.xaml" />
+				<TreeViewItem Header="The edit menu" Tag="Help/EditMenu.xaml" />
+				<TreeViewItem Header="The Stylus-Mode menu" Tag="Help/StylusModeMenu.xaml" />
+				<TreeViewItem Header="The Eraser-Mode menu" Tag="Help/EraserModeMenu.xaml" />
+				<TreeViewItem Header="The tools menu" Tag="Help/ToolsMenu.xaml">
+					<TreeViewItem Header="The stylus tool dialog" Tag="Help/StylusToolDialog.xaml" />
+					<TreeViewItem Header="The eraser tool dialog" Tag="Help/EraserToolDialog.xaml" />
+				</TreeViewItem>
+				<TreeViewItem Header="The help menu" Tag="Help/HelpMenu.xaml" />
+			</TreeViewItem>
+			<TreeViewItem Header="The copyright information" Tag="Help/Copyright.xaml" />
+
+		</TreeView>
+		
+		<GridSplitter />
+		<Frame Name="frame" Grid.Column="2" />
+	</Grid>
+	</NavigationWindow.Content>
+</NavigationWindow>
