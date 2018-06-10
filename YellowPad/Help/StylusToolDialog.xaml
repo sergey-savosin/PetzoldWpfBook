@@ -1,0 +1,54 @@
+﻿<!-- ===================================================
+      StylusToolDialog.xaml (c) 2006 by Charles Petzold
+     =================================================== -->
+<Page xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      Title="The Stylus Tool Dialog">
+    <FlowDocumentReader ViewingMode="Scroll">
+        <FlowDocument>
+            <Paragraph TextAlignment="Center"
+                       FontSize="16pt">
+                The Stylus Tool Dialog
+            </Paragraph>
+            <Paragraph>
+                The <Bold>Stylus Tool</Bold> dialog lets you change the 
+                dimensions, shape, and color of the stylus, and other
+                aspects of its behavior.
+            </Paragraph>
+            <BlockUIContainer>
+                <Image Source="StylusToolDialog.png" 
+                       Stretch="None"/>
+            </BlockUIContainer>
+            <Paragraph>
+                Use the <Bold>Width</Bold> and <Bold>Height</Bold> fields
+                to specify the dimensions of the stylus in points
+                (1/72<Run BaselineAlignment="Superscript">nd</Run> inch).
+                You can use different horizontal and vertical dimensions
+                for calligraphic effects.
+            </Paragraph>
+            <Paragraph>
+                Use the <Bold>Rotation</Bold> field to specify a 
+                rotation of the stylus tip. The rotation only makes sense
+                when the horizontal and vertical dimensions of the stylus
+                are unequal.
+            </Paragraph>
+            <Paragraph>
+                The stylus tip can be either elliptical or rectangular.
+                Pick the shape you want.
+            </Paragraph>
+            <Paragraph>
+                When you check the <Bold>Ignore Pressure</Bold> item,
+                the pressure of the stylus on the screen has no effect
+                on the width of the lines you draw. Checking this option
+                has no effect if you're drawing ink with the mouse.
+            </Paragraph>
+            <Paragraph>
+                When you check the <Bold>Highlighter</Bold> item,
+                the lines are drawn with 50% transparency.
+            </Paragraph>
+            <Paragraph>
+                Choose the color you want from the list box.
+            </Paragraph>
+        </FlowDocument>
+    </FlowDocumentReader>
+</Page>
+

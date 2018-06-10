@@ -1,0 +1,58 @@
+<!-- ===========================================
+      EditMenu.xaml (c) 2006 by Charles Petzold
+     =========================================== -->
+<Page xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      Title="The Edit Menu">
+    <FlowDocumentReader ViewingMode="Scroll">
+        <FlowDocument>
+            <Paragraph TextAlignment="Center"
+                       FontSize="16pt">
+                The Edit Menu
+            </Paragraph>
+            <Paragraph>
+                The <Bold>Edit Menu</Bold> lets you copy ink from the 
+                pad to the clipboard, and paste ink from the clipboard
+                to the pad.
+            </Paragraph>
+            <Paragraph>
+                The <Bold>Cut</Bold>, <Bold>Copy</Bold>, and 
+                <Bold>Delete</Bold> items are enabled only if strokes
+                are selected. See the 
+                <Hyperlink NavigateUri="StylusModeMenu.xaml">
+                    Stylus-Mode Menu
+                </Hyperlink>
+                for information on selecting strokes. 
+                The <Bold>Cut</Bold> and <Bold>Copy</Bold> items 
+                copy selected strokes to the clipboard. 
+                The <Bold>Cut</Bold> and <Bold>Delete</Bold> items 
+                delete selected strokes from the pad.
+            </Paragraph>
+            <Paragraph>
+                The <Bold>Paste</Bold> item copies ink from the clipboard
+                to the pad. This item is enabled only if the clipboard
+                contains ink data. The ink is copied from the clipboard to
+                the upper-left corner of the pad, but you can move it 
+                elsewhere.
+            </Paragraph>
+            <Paragraph>
+                The <Bold>Select All</Bold> item selects all strokes. 
+                This item also puts the stylus into selection mode.
+            </Paragraph>
+            <Paragraph>
+                The <Bold>Format Selection</Bold> item displays a dialog
+                that lets you format the selected strokes.
+            </Paragraph>
+            <BlockUIContainer>
+                <Image Source="FormatSelectionDialog.png" 
+                       Stretch="None"/>
+            </BlockUIContainer>
+            <Paragraph>
+                See the 
+                <Hyperlink NavigateUri="StylusToolDialog.xaml">
+                    Stylus Tool Dialog
+                </Hyperlink>
+                for more information about this dialog.
+            </Paragraph>
+        </FlowDocument>
+    </FlowDocumentReader>
+</Page>

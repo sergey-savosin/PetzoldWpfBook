@@ -1,0 +1,47 @@
+<!-- ===========================================
+      FileMenu.xaml (c) 2006 by Charles Petzold
+     =========================================== -->
+<Page xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      Title="The File Menu">
+    <FlowDocumentReader ViewingMode="Scroll">
+        <FlowDocument>
+            <Paragraph TextAlignment="Center"
+                       FontSize="16pt">
+                The File Menu
+            </Paragraph>
+            <Paragraph>
+                The <Bold>File</Bold> menu lets you load and save ink.
+                The program does not retain the file name of the ink file
+                you've loaded, or warn you that you haven't yet saved
+                the ink on the canvas.
+            </Paragraph>
+            <Paragraph>
+                The <Bold>New</Bold> menu item clears the canvas. If you
+                haven't saved the ink, it is lost.
+            </Paragraph>
+            <Paragraph>
+                The <Bold>Open</Bold> menu item lets you load a file in
+                the Ink Serialized Format (ISF).
+            </Paragraph>
+            <Paragraph>
+                The <Bold>Save</Bold> menu item lets you save a file in
+                the Ink Serialized Format.
+            </Paragraph>
+            <Paragraph>
+                In addition, the <Bold>Save</Bold> menu item lets you save
+                a XAML format file containing a <Italic>Drawing</Italic>
+                object representing the ink outlines and colors. You can
+                use this XAML file when programming graphics under the
+                Windows Presentation Foundation. See Chapter 22 of the
+                book
+                <Hyperlink NavigateUri="http://www.charlespetzold.com/wpf">
+                    Applications + Code + Markup
+                </Hyperlink>
+                for details.
+            </Paragraph>
+            <Paragraph>
+                The <Bold>Exit</Bold> item terminates the program.
+            </Paragraph>
+        </FlowDocument>
+    </FlowDocumentReader>
+</Page>

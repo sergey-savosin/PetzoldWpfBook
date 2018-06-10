@@ -1,0 +1,44 @@
+<!-- =================================================
+      StylusModeMenu.xaml (c) 2006 by Charles Petzold
+     ================================================= -->
+<Page xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      Title="The Stylus-Mode Menu">
+    <FlowDocumentReader ViewingMode="Scroll">
+        <FlowDocument>
+            <Paragraph TextAlignment="Center" FontSize="16pt">
+                The Stylus-Mode Menu 
+            </Paragraph>
+            <Paragraph>
+                The <Bold>Stylus-Mode</Bold> menu lets you control the 
+                functionality of the stylus or the mouse.
+            </Paragraph>
+            <Paragraph>
+                The <Bold>Ink</Bold> option is the default. The stylus
+                (or mouse with left button pressed) draws ink on the pad.
+            </Paragraph>
+            <Paragraph>
+                The <Bold>Erase by Point</Bold> option turns the stylus
+                or mouse into an eraser. Erasing only affects parts of
+                a stroke and effectively divides strokes into multiple 
+                pieces.
+            </Paragraph>
+            <Paragraph>
+                The <Bold>Erase by Stroke</Bold> option lets you erase 
+                entire strokes by touching the stylus or mouse pointer 
+                to the stroke.
+            </Paragraph>
+            <Paragraph>
+                The <Bold>Select</Bold> mode lets you select strokes.
+                The stylus or mouse draws a lasso that you can draw
+                around one or more strokes. After the strokes are 
+                selected, you can move or resize the selection box, 
+                or use the
+                <Hyperlink NavigateUri="EditMenu.xaml">
+                    Edit menu
+                </Hyperlink>
+                to copy the strokes to the clipboard, delete the 
+                strokes, or reformat them.
+            </Paragraph>
+        </FlowDocument>
+    </FlowDocumentReader>
+</Page>

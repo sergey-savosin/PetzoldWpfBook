@@ -1,0 +1,31 @@
+<!-- ============================================
+      ToolsMenu.xaml (c) 2006 by Charles Petzold
+     ============================================ -->
+<Page xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      Title="The Tools Menu">
+    <FlowDocumentReader ViewingMode="Scroll">
+        <FlowDocument>
+            <Paragraph TextAlignment="Center"
+                       FontSize="16pt">
+                The Tools Menu
+            </Paragraph>
+            <Paragraph>
+                The <Bold>Tools</Bold> menu lets you change the 
+                dimensions, shape, and color of the stylus, or the
+                dimensions and shape of the eraser.
+            </Paragraph>
+            <Paragraph>
+                The <Bold>Stylus</Bold> item displays the
+                <Hyperlink NavigateUri="StylusToolDialog.xaml">
+                    Stylus Tool Dialog
+                </Hyperlink>.
+            </Paragraph>
+            <Paragraph>
+                The <Bold>Eraser</Bold> item displays the
+                <Hyperlink NavigateUri="EraserToolDialog.xaml">
+                    Eraser Tool Dialog
+                </Hyperlink>.
+            </Paragraph>
+        </FlowDocument>
+    </FlowDocumentReader>
+</Page>

@@ -1,0 +1,32 @@
+<!-- =================================================
+      EraserModeMenu.xaml (c) 2006 by Charles Petzold
+     ================================================= -->
+<Page xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      Title="The Eraser-Mode Menu">
+    <FlowDocumentReader ViewingMode="Scroll">
+        <FlowDocument>
+            <Paragraph TextAlignment="Center"
+                       FontSize="16pt">
+                The Eraser-Mode Menu
+            </Paragraph>
+            <Paragraph>
+                The <Bold>Eraser-Mode</Bold> menu lets you control the
+                functionality of the stylus when the stylus is inverted. 
+                The menu is identical to the 
+                <Hyperlink NavigateUri="StylusModeMenu.xaml">
+                    Stylus-Mode Menu
+                </Hyperlink>
+                except that the default item is
+                <Bold>Erase by Stroke</Bold>.
+            </Paragraph>
+            <Paragraph>
+                The inverted stylus does not work well in 
+                <Bold>Select</Bold> mode.
+            </Paragraph>
+            <Paragraph>
+                This menu does not appear when running the program on
+                a non-Tablet PC.
+            </Paragraph>
+        </FlowDocument>
+    </FlowDocumentReader>
+</Page>

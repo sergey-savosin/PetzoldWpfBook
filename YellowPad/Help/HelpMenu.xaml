@@ -1,0 +1,21 @@
+<!-- ===========================================
+      HelpMenu.xaml (c) 2006 by Charles Petzold
+     =========================================== -->
+<Page xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      Title="The Help Menu">
+    <FlowDocumentReader ViewingMode="Scroll">
+        <FlowDocument>
+            <Paragraph TextAlignment="Center"
+                       FontSize="16pt">
+                The Help Menu
+            </Paragraph>
+            <Paragraph>
+                The <Bold>Help</Bold> item displays this window.
+            </Paragraph>
+            <Paragraph>
+                The <Bold>About YellowPad</Bold> item displays
+                copyright information.
+            </Paragraph>
+        </FlowDocument>
+    </FlowDocumentReader>
+</Page>

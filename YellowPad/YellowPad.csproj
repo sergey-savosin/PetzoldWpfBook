@@ -103,6 +103,7 @@
   <ItemGroup>
     <Folder Include="ColorListBox" />
     <Folder Include="Images" />
+    <Folder Include="Help" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

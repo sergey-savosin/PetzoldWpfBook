@@ -1,0 +1,83 @@
+<!-- ===========================================
+      Overview.xaml (c) 2006 by Charles Petzold
+     =========================================== -->
+<Page xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      Title="Program Overview">
+    <FlowDocumentReader ViewingMode="Scroll">
+        <FlowDocument>
+            <Paragraph TextAlignment="Center"
+                       FontSize="16pt">
+                Program Overview
+            </Paragraph>
+            <Paragraph>
+                Yellow Pad is a sample program from Charles Petzold's book
+                <Hyperlink NavigateUri="http://www.charlespetzold.com/wpf">
+                    <Italic>
+                        Applications = Code + Markup: A Guide to the 
+                        Microsoft Windows Presentation Foundation
+                    </Italic>
+                </Hyperlink>
+                published by Microsoft Press in 2006.
+            </Paragraph>
+            <Paragraph>
+                Yellow Pad displays a canvas resembling one page of a
+                small yellow legal pad. Using the stylus or mouse, you
+                can draw on the pad. What you draw is known as
+                <Italic>ink</Italic>. Each line you draw is known as 
+                a <Italic>stroke</Italic>.
+            </Paragraph>
+            <Paragraph>
+                Although Yellow Pad is written
+                for the Tablet PC, it has nearly the same functionality 
+                on a non-Tablet PC when you use the mouse. Press the 
+                left mouse button to begin a stroke, and lift the mouse 
+                button to end the stroke.
+            </Paragraph>
+            <Paragraph>
+                The 
+                <Hyperlink NavigateUri="FileMenu.xaml">File Menu</Hyperlink>
+                lets you save ink to a file and load ink from files.
+            </Paragraph>
+            <Paragraph>
+                The
+                <Hyperlink NavigateUri="EditMenu.xaml">Edit Menu</Hyperlink>
+                lets you copy ink to the clipboard and paste ink from the 
+                clipboard.
+            </Paragraph>
+            <Paragraph>
+                The
+                <Hyperlink NavigateUri="StylusModeMenu.xaml">
+                    Stylus-Mode Menu
+                </Hyperlink>
+                lets you select the functionality of the stylus or 
+                mouse&#x2014;whether the stylus or mouse draws ink, 
+                erases, or selects strokes.
+            </Paragraph>
+            <Paragraph>
+                The
+                <Hyperlink NavigateUri="EraserModeMenu.xaml">
+                    Eraser-Mode Menu
+                </Hyperlink>
+                is similar to the Stylus-Mode Menu but pertains to the
+                opposite end of the stylus. This menu does not appear when
+                you run the program on a non-Tablet PC.
+            </Paragraph>
+            <Paragraph>
+                The 
+                <Hyperlink NavigateUri="ToolsMenu.xaml">
+                    Tools Menu
+                </Hyperlink>
+                lets you select the color, dimensions, and shape 
+                of the stylus, and the dimensions and shape of the eraser.
+            </Paragraph>
+            <Paragraph>
+                The
+                <Hyperlink NavigateUri="HelpMenu.xaml">
+                    Help Menu
+                </Hyperlink>
+                displays information about the program, including this
+                window.
+            </Paragraph>
+        </FlowDocument>
+    </FlowDocumentReader>
+</Page>

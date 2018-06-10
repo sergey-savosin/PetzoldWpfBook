@@ -1,0 +1,35 @@
+﻿<!-- ===================================================
+      EraserToolDialog.xaml (c) 2006 by Charles Petzold
+     =================================================== -->
+<Page xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      Title="The Eraser Tool Dialog">
+    <FlowDocumentReader ViewingMode="Scroll">
+        <FlowDocument>
+            <Paragraph TextAlignment="Center"
+                       FontSize="16pt">
+                The Eraser Tool Dialog
+            </Paragraph>
+            <Paragraph>
+                The <Bold>Eraser Tool</Bold> dialog lets you change the
+                dimensions and shape of the eraser.
+            </Paragraph>
+            <BlockUIContainer>
+                <Image Source="EraserToolDialog.png" 
+                       Stretch="None"/>
+            </BlockUIContainer>
+            <Paragraph>
+                Use the <Bold>Width</Bold> and <Bold>Height</Bold> fields
+                to specify the dimensions of the eraser in points
+                (1/72<Run BaselineAlignment="Superscript">nd</Run> inch).
+            </Paragraph>
+            <Paragraph>
+                Use the <Bold>Rotation</Bold> field to specify a
+                rotation of the eraser. The rotation only makes sense
+                when the horizontal and vertical dimensions of the eraser
+                are unequal.
+            </Paragraph>
+        </FlowDocument>
+    </FlowDocumentReader>
+</Page>
+
+
