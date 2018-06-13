@@ -89,6 +89,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NavigationDemo", "Navigatio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrameNavigationDemo", "FrameNavigationDemo\FrameNavigationDemo.csproj", "{14CDAF12-5FBA-41D0-9473-82BBD810FB8D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComputerDatingWizard", "ComputerDatingWizard\ComputerDatingWizard.csproj", "{798084A5-350E-46A6-A843-BE5816BF8CA4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -471,6 +473,18 @@ Global
 		{14CDAF12-5FBA-41D0-9473-82BBD810FB8D}.Release|x64.Build.0 = Release|x64
 		{14CDAF12-5FBA-41D0-9473-82BBD810FB8D}.Release|x86.ActiveCfg = Release|x86
 		{14CDAF12-5FBA-41D0-9473-82BBD810FB8D}.Release|x86.Build.0 = Release|x86
+		{798084A5-350E-46A6-A843-BE5816BF8CA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{798084A5-350E-46A6-A843-BE5816BF8CA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{798084A5-350E-46A6-A843-BE5816BF8CA4}.Debug|x64.ActiveCfg = Debug|x64
+		{798084A5-350E-46A6-A843-BE5816BF8CA4}.Debug|x64.Build.0 = Debug|x64
+		{798084A5-350E-46A6-A843-BE5816BF8CA4}.Debug|x86.ActiveCfg = Debug|x86
+		{798084A5-350E-46A6-A843-BE5816BF8CA4}.Debug|x86.Build.0 = Debug|x86
+		{798084A5-350E-46A6-A843-BE5816BF8CA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{798084A5-350E-46A6-A843-BE5816BF8CA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{798084A5-350E-46A6-A843-BE5816BF8CA4}.Release|x64.ActiveCfg = Release|x64
+		{798084A5-350E-46A6-A843-BE5816BF8CA4}.Release|x64.Build.0 = Release|x64
+		{798084A5-350E-46A6-A843-BE5816BF8CA4}.Release|x86.ActiveCfg = Release|x86
+		{798084A5-350E-46A6-A843-BE5816BF8CA4}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -510,5 +524,6 @@ Global
 		{54721CAB-F364-4F01-9411-94BEA33A6540} = {3A9B6938-58A7-4FF7-A926-AA5A384FC743}
 		{60F6A4B3-FDC6-4109-B32D-C5E5DE03B9C3} = {3A9B6938-58A7-4FF7-A926-AA5A384FC743}
 		{14CDAF12-5FBA-41D0-9473-82BBD810FB8D} = {3A9B6938-58A7-4FF7-A926-AA5A384FC743}
+		{798084A5-350E-46A6-A843-BE5816BF8CA4} = {3A9B6938-58A7-4FF7-A926-AA5A384FC743}
 	EndGlobalSection
 EndGlobal

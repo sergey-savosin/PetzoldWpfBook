@@ -1,0 +1,35 @@
+﻿
+<Page x:Class="Petzold.ComputerDatingWizard.WizardPage0"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	>
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto" />
+			<RowDefinition Height="*" />
+			<RowDefinition Height="Auto" />
+		</Grid.RowDefinitions>
+		
+		<FlowDocumentScrollViewer Grid.Row="0" Margin="6"
+			VerticalScrollBarVisibility="Hidden" >
+			<FlowDocument FontSize="10pt">
+				<Paragraph>
+				Wellcome to the Computer Dating Wizard.
+				Some <Italic> italic text</Italic> at the screen.
+				</Paragraph>
+				<Paragraph>
+				To begin, click the Begin button.
+				</Paragraph>
+			</FlowDocument>
+		</FlowDocumentScrollViewer>
+		<Grid Grid.Row="2">
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="*" />
+				<ColumnDefinition Width="Auto" />
+			</Grid.ColumnDefinitions>
+		
+			<Button Grid.Column="1" Click="BeginButtonOnClick"
+				MinWidth="72" Margin="6" Content="Begin &gt;" />
+		</Grid>
+	</Grid>
+</Page>
