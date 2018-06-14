@@ -8,8 +8,9 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>ComputerDatingWizard</RootNamespace>
     <AssemblyName>ComputerDatingWizard</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <AppDesignerFolder>Properties</AppDesignerFolder>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -67,6 +68,13 @@
       <SubType>Code</SubType>
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="DirectoryTreeView.cs" />
+    <Compile Include="DirectoryPage.xaml.cs">
+      <DependentUpon>DirectoryPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DirectoryTreeViewItem.cs" />
+    <Compile Include="ImagedTreeViewItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\WPFAssemblyInfo.cs" />
     <Compile Include="Vitals.cs" />
@@ -82,14 +90,32 @@
       <DependentUpon>WizardPage1.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="WizardPage2.xaml.cs">
+      <DependentUpon>WizardPage2.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Include="ComputerDatingWizard.xaml" />
+    <Page Include="DirectoryPage.xaml" />
     <Page Include="WizardPage0.xaml" />
     <Page Include="WizardPage1.xaml" />
+    <Page Include="WizardPage2.xaml" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <Resource Include="Images\CDDrive_16x.png" />
+    <Resource Include="Images\FloppyDrive_16x.png" />
+    <Resource Include="Images\FolderOpen_16x.png" />
+    <Resource Include="Images\Folder_16x.png" />
+    <Resource Include="Images\HardDrive_16x.png" />
+    <Resource Include="Images\Memory_16x.png" />
+    <Resource Include="Images\Question_16x.png" />
+    <Resource Include="Images\Release_16x.png" />
+    <Resource Include="Images\UnknownProject_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Images" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

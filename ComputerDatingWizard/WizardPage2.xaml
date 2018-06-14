@@ -1,0 +1,46 @@
+﻿<Page x:Class="Petzold.ComputerDatingWizard.WizardPage2"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	>
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto" />
+			<RowDefinition Height="Auto" />
+			<RowDefinition Height="Auto" />
+			<RowDefinition Height="Auto" />
+			<RowDefinition Height="Auto" />
+			<RowDefinition Height="*" />
+			<RowDefinition Height="Auto" />
+		</Grid.RowDefinitions>
+	
+		<!-- OS -->
+		<TextBlock Grid.Row="0" Margin="0, 12, 0, 0">
+			Favorite OS:
+		</TextBlock>
+		<TextBox Grid.Row="1" Name="txtboxFavoriteOS"
+			Text="Microsoft Vista" />
+		<!-- Catalog -->
+		<TextBlock Grid.Row="2" Margin="0, 12, 0, 0">
+			Favorite disk directory
+		</TextBlock>
+		<TextBox Grid.Row="3" Name="txtboxFavoriteDir" Text="C:\" />
+		<Button Grid.Row="4" Click="BrowseButtonOnClick"
+			HorizontalAlignment="Right" MinWidth="72"
+			Margin="0, 2, 0, 0" Content="Browse..." />
+	
+		<!-- Goto buttons -->
+		<Grid Grid.Row="6">
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="*" />
+				<ColumnDefinition Width="Auto" />
+				<ColumnDefinition Width="Auto" />
+			</Grid.ColumnDefinitions>
+			<Button Grid.Column="1" Click="PreviousButtonOnClick"
+				MinWidth="72" Margin="6"
+				Content="&lt; Previous" />
+			<Button Grid.Column="2" Click="NextButtonOnClick"
+				MinWidth="72" Margin="6"
+				Content="Next &gt;" />
+		</Grid>
+	</Grid>
+</Page>
