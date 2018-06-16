@@ -8,6 +8,7 @@
  */
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -15,6 +16,7 @@ using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
+using System.Windows.Navigation;
 using Petzold.RecurceDirectoriesIncrementally;
 
 namespace Petzold.ComputerDatingWizard
@@ -24,21 +26,37 @@ namespace Petzold.ComputerDatingWizard
 	/// </summary>
 	public partial class WizardPage2 : Page
 	{
+		Vitals vitals;
+		
 		public WizardPage2(Vitals vitals)
 		{
 			InitializeComponent();
+			this.vitals = vitals;
 		}
+		
 		void BrowseButtonOnClick(object sender, RoutedEventArgs e)
 		{
-			throw new NotImplementedException();
+			DirectoryPage page = new DirectoryPage();
+			page.Return += DirPageOnReturn;
+			NavigationService.Navigate(page);
 		}
+		
 		void PreviousButtonOnClick(object sender, RoutedEventArgs e)
 		{
 			throw new NotImplementedException();
 		}
+		
 		void NextButtonOnClick(object sender, RoutedEventArgs e)
 		{
 			throw new NotImplementedException();
+		}
+
+		void DirPageOnReturn(object sender, ReturnEventArgs<DirectoryInfo> e)
+		{
+			if (e.Result != null)
+			{
+				txtboxFavoriteDir.Text = e.Result.FullName;
+			}
 		}
 	}
 }

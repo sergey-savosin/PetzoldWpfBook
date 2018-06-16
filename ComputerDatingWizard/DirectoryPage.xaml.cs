@@ -33,6 +33,23 @@ namespace Petzold.ComputerDatingWizard
 		public DirectoryPage()
 		{
 			InitializeComponent();
+			treevue.SelectedItemChanged += TreeViewOnSelectedItemChanged;
+		}
+		
+		void CancelButtonOnClick(object sender, RoutedEventArgs e)
+		{
+			OnReturn(new ReturnEventArgs<DirectoryInfo>());
+		}
+		
+		void OkButtonOnClick(object sender, RoutedEventArgs e)
+		{
+			DirectoryInfo dirinfo = (treevue.SelectedItem as DirectoryTreeViewItem).DirectoryInfo;
+			OnReturn(new ReturnEventArgs<DirectoryInfo>(dirinfo));
+		}
+
+		void TreeViewOnSelectedItemChanged(object sender, RoutedPropertyChangedEventArgs<object> e)
+		{
+			btnOk.IsEnabled = e.NewValue != null;
 		}
 	}
 }
