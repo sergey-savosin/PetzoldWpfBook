@@ -1,0 +1,62 @@
+﻿<Page x:Class="Petzold.ComputerDatingWizard.WizardPage4"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	>
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto" />
+			<RowDefinition Height="*" />
+			<RowDefinition Height="Auto" />
+		</Grid.RowDefinitions>
+	
+		<TextBlock Grid.Row="0">
+			<LineBreak />
+			<Run Text="Name: " />
+			<Run Name="runName" />
+
+			<LineBreak />
+			<Run Text="Home: " />
+			<Run Name="runHome" />
+
+			<LineBreak />
+			<Run Text="Gender: " />
+			<Run Name="runGender" />
+
+			<LineBreak />
+			<Run Text="Favorite OS: " />
+			<Run Name="runOS" />
+
+			<LineBreak />
+			<Run Text="Favorite directory: " />
+			<Run Name="runDirectory" />
+
+			<LineBreak />
+			<Run Text="Mother's maiden name: " />
+			<Run Name="runMomsMaidenName" />
+
+			<LineBreak />
+			<Run Text="Favorite pet: " />
+			<Run Name="runPet" />
+
+			<LineBreak />
+			<Run Text="Income level: " />
+			<Run Name="runIncome" />
+		</TextBlock>
+	
+		<!-- Goto buttons -->
+		<Grid Grid.Row="2">
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="*" />
+				<ColumnDefinition Width="Auto" />
+				<ColumnDefinition Width="Auto" />
+			</Grid.ColumnDefinitions>
+			<Button Grid.Column="1" Click="PreviousButtonOnClick"
+				MinWidth="72" Margin="6"
+				Content="&lt; Previous" />
+	
+			<Button Grid.Column="2" Click="SubmitButtonOnClick"
+				MinWidth="72" Margin="6"
+				Content="Submit!" />
+		</Grid>
+	</Grid>
+</Page>

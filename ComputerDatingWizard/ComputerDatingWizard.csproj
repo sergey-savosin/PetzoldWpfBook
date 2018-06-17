@@ -94,6 +94,14 @@
       <DependentUpon>WizardPage2.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="WizardPage3.xaml.cs">
+      <DependentUpon>WizardPage3.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WizardPage4.xaml.cs">
+      <DependentUpon>WizardPage4.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Include="ComputerDatingWizard.xaml" />
@@ -101,6 +109,8 @@
     <Page Include="WizardPage0.xaml" />
     <Page Include="WizardPage1.xaml" />
     <Page Include="WizardPage2.xaml" />
+    <Page Include="WizardPage3.xaml" />
+    <Page Include="WizardPage4.xaml" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

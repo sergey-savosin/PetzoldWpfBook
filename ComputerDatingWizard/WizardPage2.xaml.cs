@@ -43,12 +43,21 @@ namespace Petzold.ComputerDatingWizard
 		
 		void PreviousButtonOnClick(object sender, RoutedEventArgs e)
 		{
-			throw new NotImplementedException();
+			NavigationService.GoBack();
 		}
 		
 		void NextButtonOnClick(object sender, RoutedEventArgs e)
 		{
-			throw new NotImplementedException();
+			vitals.FavoriteOS = txtboxFavoriteOS.Text;
+			vitals.Directory = txtboxFavoriteDir.Text;
+			if (NavigationService.CanGoForward)
+				NavigationService.GoForward();
+			else
+			{
+				WizardPage3 page = new WizardPage3(vitals);
+				NavigationService.Navigate(page);
+			}
+				
 		}
 
 		void DirPageOnReturn(object sender, ReturnEventArgs<DirectoryInfo> e)
