@@ -1,0 +1,19 @@
+﻿<Window x:Class="Petzold.FormattedDigitalClock.FormattedDigitalClockWindow"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:src="clr-namespace:Petzold.FormattedDigitalClock"
+	Title="Formatted Digital Clock" SizeToContent="WidthAndHeight"
+	ResizeMode="CanMinimize"
+	FontFamily="Bookman Old Style"
+	FontSize="36pt"
+	>
+	<Window.Resources>
+		<src:ClockTicker2 x:Key="clock" />
+		<src:FormattedTextConverter x:Key="conv" />
+	</Window.Resources>
+	<Window.Content>
+		<Binding Source="{StaticResource clock}" Path="DateTime"
+			Converter="{StaticResource conv}"
+			ConverterParameter="...{0:T}..." />
+	</Window.Content>
+</Window>
