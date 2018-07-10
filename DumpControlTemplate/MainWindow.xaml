@@ -1,0 +1,36 @@
+﻿<Window x:Class="Petzold.DumpControlTemplate.MainWindow"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:src="clr-namespace:Petzold.DumpControlTemplate"
+	Title="Dump Control Template - no control" Height="300" Width="300"
+	>
+	<DockPanel>
+		<Menu DockPanel.Dock="Top">
+			<src:ControlMenuItem MenuItem.Click="ControlItemOnClick" />
+			<MenuItem Header="Dump" SubmenuOpened="DumpOnOpened">
+				<MenuItem Header="Template property (type ControlTemplate)"
+					Name="itemTemplate"
+					Click="DumpTemplateOnClick" />
+				<MenuItem Header="ItemsPanel property (type ItemPanelTemplate)"
+					Name="itemItemsPanel"
+					Click="DumpItemsPanelOnClick" />
+			</MenuItem>
+		</Menu>
+		<Grid Name="grid">
+			<Grid.RowDefinitions>
+				<RowDefinition Height="2*" />
+				<RowDefinition Height="Auto" />
+				<RowDefinition Height="8*" />
+			</Grid.RowDefinitions>
+			<GridSplitter Grid.Row="1" Height="6"
+				HorizontalAlignment="Stretch"
+				VerticalAlignment="Center"/>
+			<TextBox Grid.Row="2"
+				Name="txtbox"
+				FontFamily="Lucida Console"
+				AcceptsReturn="True"
+				HorizontalScrollBarVisibility="Auto"
+				VerticalScrollBarVisibility="Auto" />
+		</Grid>
+	</DockPanel>
+</Window>
