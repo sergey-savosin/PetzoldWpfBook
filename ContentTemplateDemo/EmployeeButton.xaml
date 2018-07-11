@@ -1,0 +1,24 @@
+﻿<Button x:Class="Petzold.ContentTemplateDemo.EmployeeButton"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:src="clr-namespace:Petzold.ContentTemplateDemo">
+	<Button.ContentTemplate>
+		<DataTemplate DataType="{x:Type src:Employee}">
+			<DockPanel>
+				<Image DockPanel.Dock="Left" Stretch="None"
+					Source="{Binding Path=Face}" />
+				<UniformGrid Rows="2" VerticalAlignment="Center" Margin="12">
+					<TextBlock FontSize="16pt" TextAlignment="Center"
+						Text="{Binding Path=Name}" />
+					<StackPanel Orientation="Horizontal" TextBlock.FontSize="12pt">
+						<TextBlock Text="{Binding Path=Birthdate.Day}" />
+						<TextBlock Text="/" />
+						<TextBlock Text="{Binding Path=Birthdate.Month}" />
+						<TextBlock Text="/" />
+						<TextBlock Text="{Binding Path=Birthdate.Year}" />
+					</StackPanel>
+				</UniformGrid>
+			</DockPanel>
+		</DataTemplate>
+	</Button.ContentTemplate>
+</Button>

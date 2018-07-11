@@ -1,0 +1,35 @@
+﻿<Window x:Class="Petzold.ContentTemplateDemo.MainWindow"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:src="clr-namespace:Petzold.ContentTemplateDemo"
+	Title="Content Template Demo"
+	>
+	<Window.Resources>
+		<Style TargetType="{x:Type src:EmployeeButton}">
+			<Setter Property="HorizontalAlignment" Value="Center" />
+			<Setter Property="VerticalAlignment" Value="Center" />
+			<Setter Property="Margin" Value="12" />
+		</Style>
+	</Window.Resources>
+
+	<StackPanel Name="stack" Button.Click="EmployeeButtonOnClick">
+		<src:EmployeeButton>
+			<src:EmployeeButton.Content>
+				<src:Employee Name="Betty" Birthdate="8/8/1970" Face="Betty.png" />
+			</src:EmployeeButton.Content>
+		</src:EmployeeButton>
+
+		<src:EmployeeButton>
+			<src:EmployeeButton.Content>
+				<src:Employee Name="Edgar" Birthdate="2/2/1965" Face="Edgar.png" />
+			</src:EmployeeButton.Content>
+		</src:EmployeeButton>
+
+		<src:EmployeeButton>
+			<src:EmployeeButton.Content>
+				<src:Employee Name="Sally" Birthdate="7/12/1980" Face="Sally.png" />
+			</src:EmployeeButton.Content>
+		</src:EmployeeButton>
+
+	</StackPanel>
+</Window>
