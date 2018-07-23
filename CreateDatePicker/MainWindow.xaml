@@ -1,0 +1,22 @@
+﻿<Window x:Class="Petzold.CreateDatePicker.MainWindow"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:src="clr-namespace:Petzold.CreateDatePicker"
+	Title="Create DatePicker" SizeToContent="WidthAndHeight"
+	ResizeMode="CanMinimize">
+
+	<StackPanel>
+		<src:DatePicker x:Name="datepick"
+			HorizontalAlignment="Center"
+			Margin="12"
+			DateChanged="DatePickerOnDateChanged" />
+		<StackPanel Orientation="Horizontal" Margin="12">
+			<TextBlock Text="Bound value: " />
+			<TextBlock Text="{Binding ElementName=datepick, Path=Date}" />
+		</StackPanel>
+		<StackPanel Orientation="Horizontal" Margin="12">
+			<TextBlock Text="Event handler value: " />
+			<TextBlock Name="txtblkDate" />
+		</StackPanel>
+	</StackPanel>
+</Window>
