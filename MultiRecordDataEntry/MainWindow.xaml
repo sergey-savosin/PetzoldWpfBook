@@ -1,0 +1,43 @@
+﻿<Window x:Class="Petzold.MultiRecordDataEntry.MainWindow"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:pnl="clr-namespace:Petzold.SingleRecordDataEntry"
+	Title="Multi-Record Data Entry" SizeToContent="WidthAndHeight"
+	ResizeMode="CanMinimize"
+	>
+	<DockPanel Name="dock">
+		<Menu DockPanel.Dock="Top">
+			<MenuItem Header="_File">
+				<MenuItem Header="_New" Command="New" />
+				<MenuItem Header="_Open..." Command="Open" />
+				<MenuItem Header="_Save..." Command="Save" />
+			</MenuItem>
+		</Menu>
+	
+		<StackPanel>
+			<!-- PersonalPanel for data edit -->
+			<pnl:PersonPanel x:Name="pnlPerson" />
+		
+			<!-- Navigation buttons -->
+			<UniformGrid Columns="6" HorizontalAlignment="Center">
+				<UniformGrid.Resources>
+					<Style TargetType="{x:Type Button}">
+						<Setter Property="Margin" Value="6" />
+					</Style>
+				</UniformGrid.Resources>
+				<Button Name="btnFirst" Content="First" Click="FirstOnClick" />
+				<Button Name="btnPrev" Content="Previous" Click="PrevOnClick" />
+				<Button Name="btnNext" Content="Next" Click="NextOnClick" />
+				<Button Name="btnLast" Content="Last" Click="LastOnClick" />
+				<Button Name="btnAdd" Content="Add new" Click="AddOnClick" />
+				<Button Name="btnDel" Content="Delete" Click="DelOnClick" />
+			</UniformGrid>
+		</StackPanel>
+	</DockPanel>
+
+	<Window.CommandBindings>
+		<CommandBinding Command="New" Executed="NewOnExecuted" />
+		<CommandBinding Command="Open" Executed="OpenOnExecuted" />
+		<CommandBinding Command="Save" Executed="SaveOnExecuted" />
+	</Window.CommandBindings>
+</Window>
