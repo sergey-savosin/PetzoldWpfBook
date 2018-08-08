@@ -190,7 +190,7 @@ namespace Petzold.CreateDatePicker
 		
 		void ChkboxNullOnUnchecked(object sender, RoutedEventArgs e)
 		{
-			Date = datetimeSaved;
+			//Date = datetimeSaved;
 		}
 
 		static void DateChangedCallback(DependencyObject obj, 
