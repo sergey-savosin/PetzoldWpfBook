@@ -1,0 +1,20 @@
+﻿<Window x:Class="Petzold.CustomElementBinding.Window1"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:src="clr-namespace:Petzold.CustomElementBinding"
+	Title="CustomElementBinding" Height="300" Width="300"
+	>
+	<StackPanel>
+		<ScrollBar Orientation="Horizontal"
+			Margin="24" Maximum="100"
+			LargeChange="10" SmallChange="1"
+			Value="{Binding ElementName=simple, Path=Number, Mode=OneWayToSource}" />
+		<src:SimpleElement x:Name="simple" HorizontalAlignment="Center" />
+		<ScrollBar Name="scroll"
+			Orientation="Horizontal" Margin="24" Maximum="100"
+			LargeChange="10" SmallChange="1"
+			Value="{Binding ElementName=simple, Path=Number, Mode=TwoWay}" />
+		<src:SimpleElement HorizontalAlignment="Center"
+			Number="{Binding ElementName=scroll, Path=Value, Mode=OneWay}" />
+	</StackPanel>
+</Window>

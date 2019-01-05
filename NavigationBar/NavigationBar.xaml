@@ -1,0 +1,36 @@
+﻿<ToolBar x:Class="Petzold.NavigationBar.NavigationBar"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+	<Button Click="FirstOnClick" ToolTip="Move first">
+		<Image Source="GoToFirstRow_16x.png" Stretch="None" />
+	</Button>
+	<Button Name="btnPrev" Click="PreviousOnClick" ToolTip="Move previous">
+		<Image Source="Previous_16x.png" Stretch="None" />
+	</Button>
+
+	<Separator />
+
+	<TextBox Name="txtboxCurrent" Width="48" ToolTip="Current position"
+		GotKeyboardFocus="TextBoxOnGotFocus"
+		LostKeyboardFocus="TextBoxOnLostFocus"
+		KeyDown="TextBoxOnKeyDown" />
+	<TextBox Text=" of " VerticalAlignment="Center" />
+	<TextBox Name="txtblkTotal" Text="0" VerticalAlignment="Center"
+		ToolTip="Total number of items" />
+	<Separator />
+
+	<Button Name="btnNext" Click="NextOnClick" ToolTip="Move next">
+		<Image Source="Next_16x.png" Stretch="None" />
+	</Button>
+	<Button Click="LastOnClick" ToolTip="Move last">
+		<Image Source="GoToLastRow_16x.png" Stretch="None" />
+	</Button>
+	<Separator />
+
+	<Button Click="AddOnClick" ToolTip="Add new">
+		<Image Source="NewRow_16x.png" Stretch="None" />
+	</Button>
+	<Button Name="btnDel" Click="DeleteOnClick" ToolTip="Delete">
+		<Image Source="ChangeQueryDeleteQuery_16x.png" Stretch="None" />
+	</Button>
+</ToolBar>

@@ -1,0 +1,16 @@
+﻿<Window x:Class="Petzold.DigitalClock.DigitalClockWindow"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:src="clr-namespace:Petzold.DigitalClock"
+	Title="Digital Clock" SizeToContent="WidthAndHeight"
+	ResizeMode="CanMinimize"
+	FontFamily="Bookman Old Style"
+	FontSize="36pt"
+	>
+	<Window.Resources>
+		<src:ClockTicker1 x:Key="clock"/>
+	</Window.Resources>
+	<Window.Content>
+		<Binding Source="{StaticResource clock}" Path="DateTime" />
+	</Window.Content>
+</Window>

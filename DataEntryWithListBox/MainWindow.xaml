@@ -1,0 +1,75 @@
+<Window x:Class="Petzold.DataEntryWithListBox.MainWindow"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:pnl="clr-namespace:Petzold.SingleRecordDataEntry;assembly=SingleRecordDataEntry"
+	Title="Data Entry with ListBox"
+	SizeToContent="WidthAndHeight"
+	ResizeMode="CanMinimize"
+	>
+	<DockPanel Name="dock">
+		<Menu DockPanel.Dock="Top">
+			<MenuItem Header="_File">
+				<MenuItem Header="_New" Command="New" />
+				<MenuItem Header="_Open" Command="Open" />
+				<MenuItem Header="_Save" Command="Save" />
+			</MenuItem>
+		</Menu>
+		<Grid>
+			<Grid.RowDefinitions>
+				<RowDefinition Height="Auto"/>
+				<RowDefinition Height="Auto"/>
+			</Grid.RowDefinitions>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="Auto" />
+				<ColumnDefinition Width="Auto" />
+			</Grid.ColumnDefinitions>
+		
+			<!-- Listbox with data -->
+			<ListBox Name="lstbox" Grid.Column="0"
+				Width="300" Height="300" Margin="24">
+				<ListBox.ItemTemplate>
+					<DataTemplate>
+						<StackPanel Orientation="Horizontal">
+							<TextBlock Text="{Binding Path=FirstName}" />
+							<TextBlock Text=" " />
+							<TextBlock Text="{Binding Path=MiddleName}" />
+							<TextBlock Text=" " Name="txtblkSpace"/>
+							<TextBlock Text="{Binding Path=LastName}" />
+							<TextBlock Text=" (" />
+							<TextBlock Text="{Binding Path=BirthDate.Year}" />
+							<TextBlock Text="-" />
+							<TextBlock Text="{Binding Path=DeathDate.Year}" Name="txtboxDeath"/>
+							<TextBlock Text=")" />
+						</StackPanel>
+						<DataTemplate.Triggers>
+							<DataTrigger Binding="{Binding Path=DeathDate}" Value="{x:Null}">
+								<Setter TargetName="txtboxDeath" Property="Text" Value="present" />
+							</DataTrigger>
+							<DataTrigger Binding="{Binding Path=MiddleName}" Value="">
+								<Setter TargetName="txtblkSpace" Property="Text" Value="" />
+							</DataTrigger>
+						</DataTemplate.Triggers>
+					</DataTemplate>
+				</ListBox.ItemTemplate>
+			</ListBox>
+		
+			<!-- Panel for edit data -->			
+			<pnl:PersonPanel x:Name="pnlPerson" Grid.Column="1" />
+		
+			<!-- Control buttons -->
+			<StackPanel Orientation="Horizontal" Grid.Row="1" Grid.Column="1">
+				<Button Margin="12" Click="AddOnClick">
+					Add new item
+				</Button>
+				<Button Margin="12" Click="DeleteOnClick">
+					Delete item
+				</Button>
+			</StackPanel>
+		</Grid>
+	</DockPanel>
+	<Window.CommandBindings>
+		<CommandBinding Command="New" Executed="NewOnExecuted" />
+		<CommandBinding Command="Open" Executed="OpenOnExecuted" />
+		<CommandBinding Command="Save" Executed="SaveOnExecuted" />
+	</Window.CommandBindings>
+</Window>

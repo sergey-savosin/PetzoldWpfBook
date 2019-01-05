@@ -1,16 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
   <PropertyGroup>
-    <ProjectGuid>{798084A5-350E-46A6-A843-BE5816BF8CA4}</ProjectGuid>
+    <ProjectGuid>{9B203D02-2FF8-4030-BCE2-2199CF7E562B}</ProjectGuid>
     <ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>ComputerDatingWizard</RootNamespace>
-    <AssemblyName>ComputerDatingWizard</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <RootNamespace>BindLabelToScrollBar</RootNamespace>
+    <AssemblyName>BindLabelToScrollBar</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -68,64 +67,18 @@
       <SubType>Code</SubType>
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="DirectoryTreeView.cs" />
-    <Compile Include="DirectoryPage.xaml.cs">
-      <DependentUpon>DirectoryPage.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="DirectoryTreeViewItem.cs" />
-    <Compile Include="ImagedTreeViewItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\WPFAssemblyInfo.cs" />
-    <Compile Include="Vitals.cs" />
-    <Compile Include="ComputerDatingWizard.xaml.cs">
+    <Compile Include="Window1.xaml.cs">
       <SubType>Code</SubType>
-      <DependentUpon>ComputerDatingWizard.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="WizardPage0.xaml.cs">
-      <DependentUpon>WizardPage0.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="WizardPage1.xaml.cs">
-      <DependentUpon>WizardPage1.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="WizardPage2.xaml.cs">
-      <DependentUpon>WizardPage2.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="WizardPage3.xaml.cs">
-      <DependentUpon>WizardPage3.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="WizardPage4.xaml.cs">
-      <DependentUpon>WizardPage4.xaml</DependentUpon>
-      <SubType>Code</SubType>
+      <DependentUpon>Window1.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Page Include="ComputerDatingWizard.xaml" />
-    <Page Include="DirectoryPage.xaml" />
-    <Page Include="WizardPage0.xaml" />
-    <Page Include="WizardPage1.xaml" />
-    <Page Include="WizardPage2.xaml" />
-    <Page Include="WizardPage3.xaml" />
-    <Page Include="WizardPage4.xaml" />
+    <Page Include="Window1.xaml" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
-    <Resource Include="Images\CDDrive_16x.png" />
-    <Resource Include="Images\FloppyDrive_16x.png" />
-    <Resource Include="Images\FolderOpen_16x.png" />
-    <Resource Include="Images\Folder_16x.png" />
-    <Resource Include="Images\HardDrive_16x.png" />
-    <Resource Include="Images\Memory_16x.png" />
-    <Resource Include="Images\Question_16x.png" />
-    <Resource Include="Images\Release_16x.png" />
-    <Resource Include="Images\UnknownProject_16x.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Images" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

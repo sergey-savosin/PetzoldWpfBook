@@ -1,0 +1,21 @@
+﻿<Window x:Class="Petzold.DecimalScrollBar.DecimalScrollBarWindow"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:s="clr-namespace:Petzold.DecimalScrollBar"
+	Title="Decimal ScrollBar"
+	>
+	<Window.Resources>
+		<s:DoubleToDecimalConverter x:Key="conv" />
+	</Window.Resources>
+	
+	<StackPanel>
+	  	<!-- Binding source -->
+	  	<ScrollBar Name="scroll"
+			Orientation="Horizontal" Margin="24"
+			Maximum="100" LargeChange="10" SmallChange="1" />
+		<!-- Bingding target -->
+		<Label HorizontalAlignment="Center"
+			Content="{Binding ElementName=scroll, Path=Value,
+			Converter={StaticResource conv}, ConverterParameter=2}" />
+	</StackPanel>
+</Window>

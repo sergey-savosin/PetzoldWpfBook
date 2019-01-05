@@ -1,0 +1,87 @@
+<Page x:Class="Petzold.ColorScroll.ColorScrollPage"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:src="clr-namespace:Petzold.ColorScroll"
+	WindowTitle="Color Scroll"
+	>
+	<Page.Resources>
+		<src:DoubleToByteConverter x:Key="convDoubleToByte" />
+		<src:RgbToColorConverter x:Key="convRgbToColor" />
+	</Page.Resources>
+	
+	<Grid>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="*" />
+			<ColumnDefinition Width="Auto" />
+			<ColumnDefinition Width="*" />
+		</Grid.ColumnDefinitions>
+	
+		<!-- Grid with ScrollBar and Label -->
+		<Grid Grid.Row="0" Grid.Column="0">
+			<Grid.RowDefinitions>
+				<RowDefinition Height="Auto" />
+				<RowDefinition Height="100*" />
+				<RowDefinition Height="Auto" />
+			</Grid.RowDefinitions>
+		
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="33*" />
+				<ColumnDefinition Width="33*" />
+				<ColumnDefinition Width="33*" />
+			</Grid.ColumnDefinitions>
+		
+			<!-- Red -->
+			<Label Content="Red" Foreground="Red"
+			       HorizontalAlignment="Center"
+					Grid.Row="0" Grid.Column="0" />
+			<ScrollBar Name="scrRed" Background="Red" Value="128"
+					Minimum="0" Maximum="255" SmallChange="1"
+					LargeChange="16" Focusable="True"
+					Grid.Row="1" Grid.Column="0" />
+			<Label Content="{Binding ElementName=scrRed, Path=Value,
+				Mode=OneWay, Converter={StaticResource convDoubleToByte}}"
+				HorizontalAlignment="Center"
+				Grid.Row="2" Grid.Column="0" />
+			
+			<!-- Green -->
+			<Label Content="Green" Foreground="Green"
+			       HorizontalAlignment="Center"
+					Grid.Row="0" Grid.Column="1" />
+			<ScrollBar Name="scrGreen" Background="Green" Value="128"
+					Minimum="0" Maximum="255" SmallChange="1"
+					LargeChange="16" Focusable="True"
+					Grid.Row="1" Grid.Column="1" />
+			<Label Content="{Binding ElementName=scrGreen, Path=Value,
+				Mode=OneWay, Converter={StaticResource convDoubleToByte}}"
+				HorizontalAlignment="Center"
+				Grid.Row="2" Grid.Column="1" />
+
+			<!-- Blue -->
+			<Label Content="Blue" Foreground="Blue"
+			       HorizontalAlignment="Center"
+					Grid.Row="0" Grid.Column="2" />
+			<ScrollBar Name="scrBlue" Background="Blue" Value="128"
+					Minimum="0" Maximum="255" SmallChange="1"
+					LargeChange="16" Focusable="True"
+					Grid.Row="1" Grid.Column="2" />
+			<Label Content="{Binding ElementName=scrBlue, Path=Value,
+				Mode=OneWay, Converter={StaticResource convDoubleToByte}}"
+				HorizontalAlignment="Center"
+				Grid.Row="2" Grid.Column="2" />
+		</Grid>
+	
+		<GridSplitter Grid.Row="0" Grid.Column="1" Width="6"
+			HorizontalAlignment="Center" VerticalAlignment="Stretch" />
+	
+		<Border Grid.Row="0" Grid.Column="2">
+			<Border.Background>
+				<MultiBinding Converter="{StaticResource convRgbToColor}">
+					<Binding ElementName="scrRed" Path="Value" Mode="OneWay" />
+					<Binding ElementName="scrGreen" Path="Value" Mode="OneWay" />
+					<Binding ElementName="scrBlue" Path="Value" Mode="OneWay" />
+				</MultiBinding>
+			</Border.Background>
+		</Border>
+	</Grid>
+
+</Page>

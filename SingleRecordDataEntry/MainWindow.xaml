@@ -1,0 +1,25 @@
+﻿<Window x:Class="Petzold.SingleRecordDataEntry.MainWindow"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:pnl="clr-namespace:Petzold.SingleRecordDataEntry"
+	Title="Single Record Data Entry"
+	SizeToContent="WidthAndHeight"
+	ResizeMode="CanMinimize"
+	>
+	<DockPanel Name="dock">
+		<Menu DockPanel.Dock="Top">
+			<MenuItem Header="_File">
+				<MenuItem Header="_New" Command="New" />
+				<MenuItem Header="_Open" Command="Open" />
+				<MenuItem Header="_Save" Command="Save" />
+			</MenuItem>
+		</Menu>
+		<pnl:PersonPanel x:Name="pnlPerson" />
+	</DockPanel>
+
+	<Window.CommandBindings>
+		<CommandBinding Command="New" Executed="NewOnExecuted" />
+		<CommandBinding Command="Open" Executed="OpenOnExecuted" />
+		<CommandBinding Command="Save" Executed="SaveOnExecuted" />
+	</Window.CommandBindings>
+</Window>

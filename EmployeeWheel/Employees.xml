@@ -1,0 +1,32 @@
+﻿<Employees xmlns="">
+	<Employee Name="Betty">
+		<BirthDate>8/7/1970</BirthDate>
+		<Face>Images/Betty.png</Face>
+		<LeftHanded>False</LeftHanded>
+	</Employee>
+	<Employee Name="Edgar">
+		<BirthDate>2/2/1965</BirthDate>
+		<Face>Images/Edgar.png</Face>
+		<LeftHanded>True</LeftHanded>
+	</Employee>
+	<Employee Name="Sally">
+		<BirthDate>7/12/1980</BirthDate>
+		<Face>Images/Sally.png</Face>
+		<LeftHanded>False</LeftHanded>
+	</Employee>
+	<Employee Name="Jim">
+		<BirthDate>6/12/1975</BirthDate>
+		<Face>Images/Jim.png</Face>
+		<LeftHanded>False</LeftHanded>
+	</Employee>
+	<Employee Name="Jim2">
+		<BirthDate>6/12/1975</BirthDate>
+		<Face>Images/Jim.png</Face>
+		<LeftHanded>False</LeftHanded>
+	</Employee>
+	<Employee Name="Jim3">
+		<BirthDate>6/13/1975</BirthDate>
+		<Face>Images/Jim.png</Face>
+		<LeftHanded>False</LeftHanded>
+	</Employee>
+</Employees>
