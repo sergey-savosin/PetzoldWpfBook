@@ -98,8 +98,7 @@
 							<UniformGrid Name="unigridMonth"
 								Columns="7" Rows="6"
 								IsItemsHost="True"
-								Background="{DynamicResource {x:Static
-									SystemColors.ControlLightBrushKey}}" />
+								Background="CornflowerBlue" />
 						</ItemsPanelTemplate>
 					</ListBox.ItemsPanel>
 					<ListBoxItem>dummy item</ListBoxItem>
